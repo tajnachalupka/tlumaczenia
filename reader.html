@@ -23,14 +23,32 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
 .btn-icon { width: 42px; height: 42px; filter: invert(1); pointer-events: none;}
 
-/* COMMENTS */
-#comments_title { color: white; font-size: 22px; text-align: center; margin-top: 30px; opacity: 0; transition: opacity .3s ease;}
+/* COMMENTS BUTTON */
+#comments_title {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 40px auto 20px;
+  padding: 12px;
+  width: 220px;
+  background: #272727;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+#comments_title:hover {
+  background: #333;
+}
 
 /* PADLET */
-#padlet_box { padding: 10px; background: #191818; visibility: hidden; opacity: 0; transition: opacity .1s ease;}
-#padlet_loading,
-#chapter_loading { color: white;  text-align: center; padding: 20px;}
-
+#padlet_box { 
+  padding: 10px; 
+  background: #191818; 
+  visibility: hidden; 
+  opacity: 0; 
+  transition: opacity .1s ease;
+  margin-top: 30px;   
+}
 </style>
 </head>
 
@@ -42,7 +60,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 </div>
 
 <div id="comic-container"></div>
-<p id="chapter_loading" style="margin-top:40px;">Ładuję rozdział...</p>
+<p id="chapter_loading" style="margin-top:88px; color:white; text-align:center;">Ładuję rozdział...</p>
 
 <!-- BUTTONS -->
 <div class="nav-buttons" id="nav">
@@ -51,8 +69,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   <div class="nav-btn" id="homeBtn"><img src="https://tajnachalupka.github.io/main/domek.png" class="btn-icon"></div>
 </div>
 
-<p id="comments_title">Komentarze</p>
-<p id="padlet_loading" style="margin-top:40px;">Ładuję komentarze...</p>
+<p id="comments_title">Wyświetl komentarze</p>
 <div id="padlet_box"></div>
 
 <script>
@@ -66,20 +83,17 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   const nextBtn = document.getElementById("nextBtn");
   const prevBtn = document.getElementById("prevBtn");
   const homeBtn = document.getElementById("homeBtn");
-  const nav = document.getElementById("nav");
-  const header = document.getElementById("series-header");
 
   if (!comicKey || !chapter) {
     container.innerHTML = "<p style='color:white;text-align:center;padding:50px;'>Brak parametru comic lub chapter.</p>";
     return;
   }
 
-  /* ⭐ NATYCHMIASTOWA KLIKALNOŚĆ ⭐ */
   nextBtn.onclick = () => {};
   prevBtn.onclick = () => {};
   homeBtn.onclick = () => location.href = "https://tajnachalupka.github.io/tlumaczenia/";
 
-  /* ⭐ DETEKCJA STARYCH URZĄDZEŃ ⭐ */
+  /* DETEKCJA URZĄDZEŃ */
   const USE_SLICER = (() => {
     const ua = navigator.userAgent || "";
     if (/Android [0-8]\./i.test(ua)) return false;
@@ -92,7 +106,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
     catch { return false; }
   })();
 
-  /* ⭐ SLICER BEZ SKALOWANIA ⭐ */
+  /* SLICER */
   async function sliceImage(src, sliceHeight = 2000) {
     return new Promise((resolve, reject) => {
       const img = new Image();
@@ -159,10 +173,8 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
   const loadingInfo = document.getElementById("chapter_loading");
 
-  /* ⭐ Wstawianie obrazów — TU JEST UI BREATH ⭐ */
+  /* Wstawianie obrazów */
   for (const src of pages) {
-
-    // ⭐ odblokowuje UI, next/prev działają natychmiast
     await new Promise(r => setTimeout(r, 0));
 
     try {
@@ -181,7 +193,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
   if (loadingInfo) loadingInfo.remove();
 
-  /* Sortowanie rozdziałów */
+  /* Sortowanie */
   const keys = Object.keys(data.chapters).sort((a, b) => {
     const na = parseInt(a);
     const nb = parseInt(b);
@@ -199,7 +211,6 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
   const index = keys.indexOf(chapter);
 
-  /* ⭐ NADPISANIE GUZIKÓW — DZIAŁAJĄ NATYCHMIAST ⭐ */
   nextBtn.onclick = () => {
     if (index !== -1 && index < keys.length - 1) {
       location.href = `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(keys[index + 1])}`;
@@ -216,18 +227,18 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
     }
   };
 
-  /* PADLET */
+  /* PADLET — tylko po kliknięciu */
   let padletLoaded = false;
 
-  const loadPadlet = () => {
+const loadPadlet = () => {
     if (padletLoaded) return;
     padletLoaded = true;
 
-    const loading = document.getElementById("padlet_loading");
-    if (loading) loading.remove();
+    // ⭐ ukryj przycisk
+    const btn = document.getElementById("comments_title");
+    btn.style.display = "none";
 
-    document.getElementById("comments_title").style.opacity = "1";
-
+    // ⭐ wstaw komentarze dokładnie w to miejsce
     const box = document.getElementById("padlet_box");
     const embed = data.padlet;
     const full = embed.replace("/embed/", "/");
@@ -246,23 +257,14 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
     box.style.visibility = "visible";
     box.style.opacity = "1";
-  };
+};
 
-  new IntersectionObserver(e => e[0].isIntersecting && loadPadlet(), { threshold: 0.1 })
-    .observe(document.getElementById("padlet_box"));
 
-  window.addEventListener("scroll", function reveal() {
-    if (window.scrollY > 250) {
-      const box = document.getElementById("padlet_box");
-      box.style.visibility = "visible";
-      box.style.opacity = "1";
-      window.removeEventListener("scroll", reveal);
-    }
-  });
+  document.getElementById("comments_title").onclick = loadPadlet;
 
 })();
 
-/* ⭐ AUTO-HIDE — jak w starym kodzie ⭐ */
+/* AUTO-HIDE */
 let lastScroll = 0;
 const nav = document.getElementById("nav");
 const header = document.getElementById("series-header");
