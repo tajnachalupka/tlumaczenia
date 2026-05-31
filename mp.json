@@ -1,0 +1,227 @@
+{
+  "slug": "mp",
+  "title": "melting point",
+  "header_img": "https://tajnachalupka.github.io/main/tagi/mp.png",
+  "series_icon": "https://tajnachalupka.github.io/main/guzik-gora/mp.png",
+  "cover": "https://tajnachalupka.github.io/main/covers/mp.png",
+  "desc": "Po dwunastu latach były kolega z drużyny nagle pojawia się ponownie. Eunsan nie jest zachwycony perspektywą współpracy, dawno już pogrzebał swoją skomplikowaną przeszłość związaną z hokejem i wszelkie wspomnienia o Ianie i liczy na to, że ich ponowne spotkanie to tylko jednorazowe wydarzenie. Ian jednak uparcie próbuje zatrzymać go przy sobie, przedstawiając propozycję nie do odrzucenia. Dlaczego Ian nie chce go puścić? Ma jakiś ukryty motyw? Przecież to niemożliwe, żeby coś do niego czuł... prawda?",
+  "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvv/melting-point-o5kcvpcptb5itui1",
+  "disqus_base": "mp",
+  "chapters": {
+    "1": [
+      "https://tajnachalupka.github.io/mp/01/1.jpg",
+      "https://tajnachalupka.github.io/mp/01/2.jpg",
+      "https://tajnachalupka.github.io/mp/01/3.jpg",
+      "https://tajnachalupka.github.io/mp/01/4.jpg",
+      "https://tajnachalupka.github.io/mp/01/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "2": [
+      "https://tajnachalupka.github.io/mp/02/1.jpg",
+      "https://tajnachalupka.github.io/mp/02/2.jpg",
+      "https://tajnachalupka.github.io/mp/02/3.jpg",
+      "https://tajnachalupka.github.io/mp/02/4.jpg",
+      "https://tajnachalupka.github.io/mp/02/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "3": [
+      "https://tajnachalupka.github.io/mp/03/1.jpg",
+      "https://tajnachalupka.github.io/mp/03/2.jpg",
+      "https://tajnachalupka.github.io/mp/03/3.jpg",
+      "https://tajnachalupka.github.io/mp/03/4.jpg",
+      "https://tajnachalupka.github.io/mp/03/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "4": [
+      "https://tajnachalupka.github.io/mp/04/1.jpg",
+      "https://tajnachalupka.github.io/mp/04/2.jpg",
+      "https://tajnachalupka.github.io/mp/04/3.jpg",
+      "https://tajnachalupka.github.io/mp/04/4.jpg",
+      "https://tajnachalupka.github.io/mp/04/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "5": [
+      "https://tajnachalupka.github.io/mp/05/1.jpg",
+      "https://tajnachalupka.github.io/mp/05/2.jpg",
+      "https://tajnachalupka.github.io/mp/05/3.jpg",
+      "https://tajnachalupka.github.io/mp/05/4.jpg",
+      "https://tajnachalupka.github.io/mp/05/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "6": [
+      "https://tajnachalupka.github.io/mp/06/1.jpg",
+      "https://tajnachalupka.github.io/mp/06/2.jpg",
+      "https://tajnachalupka.github.io/mp/06/3.jpg",
+      "https://tajnachalupka.github.io/mp/06/4.jpg",
+      "https://tajnachalupka.github.io/mp/06/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "7": [
+      "https://tajnachalupka.github.io/mp/07/1.jpg",
+      "https://tajnachalupka.github.io/mp/07/2.jpg",
+      "https://tajnachalupka.github.io/mp/07/3.jpg",
+      "https://tajnachalupka.github.io/mp/07/4.jpg",
+      "https://tajnachalupka.github.io/mp/07/5.jpg",
+      "https://tajnachalupka.github.io/mp/07/6.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "8": [
+      "https://tajnachalupka.github.io/mp/08/1.jpg",
+      "https://tajnachalupka.github.io/mp/08/2.jpg",
+      "https://tajnachalupka.github.io/mp/08/3.jpg",
+      "https://tajnachalupka.github.io/mp/08/4.jpg",
+      "https://tajnachalupka.github.io/mp/08/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "9": [
+      "https://tajnachalupka.github.io/mp/09/1.jpg",
+      "https://tajnachalupka.github.io/mp/09/2.jpg",
+      "https://tajnachalupka.github.io/mp/09/3.jpg",
+      "https://tajnachalupka.github.io/mp/09/4.jpg",
+      "https://tajnachalupka.github.io/mp/09/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "10": [
+      "https://tajnachalupka.github.io/mp/10/1.jpg",
+      "https://tajnachalupka.github.io/mp/10/2.jpg",
+      "https://tajnachalupka.github.io/mp/10/3.jpg",
+      "https://tajnachalupka.github.io/mp/10/4.jpg",
+      "https://tajnachalupka.github.io/mp/10/5.jpg",
+      "https://tajnachalupka.github.io/mp/10/6.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "11": [
+      "https://tajnachalupka.github.io/mp/11/1.jpg",
+      "https://tajnachalupka.github.io/mp/11/2.jpg",
+      "https://tajnachalupka.github.io/mp/11/3.jpg",
+      "https://tajnachalupka.github.io/mp/11/4.jpg",
+      "https://tajnachalupka.github.io/mp/11/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "12": [
+      "https://tajnachalupka.github.io/mp/12/1.jpg",
+      "https://tajnachalupka.github.io/mp/12/2.jpg",
+      "https://tajnachalupka.github.io/mp/12/3.jpg",
+      "https://tajnachalupka.github.io/mp/12/4.jpg",
+      "https://tajnachalupka.github.io/mp/12/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "13": [
+      "https://tajnachalupka.github.io/mp/13/1.jpg",
+      "https://tajnachalupka.github.io/mp/13/2.jpg",
+      "https://tajnachalupka.github.io/mp/13/3.jpg",
+      "https://tajnachalupka.github.io/mp/13/4.jpg",
+      "https://tajnachalupka.github.io/mp/13/5.jpg",
+      "https://tajnachalupka.github.io/mp/13/6.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "14": [
+      "https://tajnachalupka.github.io/mp/14/1.jpg",
+      "https://tajnachalupka.github.io/mp/14/2.jpg",
+      "https://tajnachalupka.github.io/mp/14/3.jpg",
+      "https://tajnachalupka.github.io/mp/14/4.jpg",
+      "https://tajnachalupka.github.io/mp/14/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "15": [
+      "https://tajnachalupka.github.io/mp/15/1.jpg",
+      "https://tajnachalupka.github.io/mp/15/2.jpg",
+      "https://tajnachalupka.github.io/mp/15/3.jpg",
+      "https://tajnachalupka.github.io/mp/15/4.jpg",
+      "https://tajnachalupka.github.io/mp/15/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "16": [
+      "https://tajnachalupka.github.io/mp/16/1.jpg",
+      "https://tajnachalupka.github.io/mp/16/2.jpg",
+      "https://tajnachalupka.github.io/mp/16/3.jpg",
+      "https://tajnachalupka.github.io/mp/16/4.jpg",
+      "https://tajnachalupka.github.io/mp/16/5.jpg",
+      "https://tajnachalupka.github.io/mp/16/6.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "17": [
+      "https://tajnachalupka.github.io/mp/17/1.jpg",
+      "https://tajnachalupka.github.io/mp/17/2.jpg",
+      "https://tajnachalupka.github.io/mp/17/3.jpg",
+      "https://tajnachalupka.github.io/mp/17/4.jpg",
+      "https://tajnachalupka.github.io/mp/17/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "18": [
+      "https://tajnachalupka.github.io/mp/18/1.jpg",
+      "https://tajnachalupka.github.io/mp/18/2.jpg",
+      "https://tajnachalupka.github.io/mp/18/3.jpg",
+      "https://tajnachalupka.github.io/mp/18/4.jpg",
+      "https://tajnachalupka.github.io/mp/18/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "19": [
+      "https://tajnachalupka.github.io/mp/19/1.jpg",
+      "https://tajnachalupka.github.io/mp/19/2.jpg",
+      "https://tajnachalupka.github.io/mp/19/3.jpg",
+      "https://tajnachalupka.github.io/mp/19/4.jpg",
+      "https://tajnachalupka.github.io/mp/19/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "20": [
+      "https://tajnachalupka.github.io/mp/20/1.jpg",
+      "https://tajnachalupka.github.io/mp/20/2.jpg",
+      "https://tajnachalupka.github.io/mp/20/3.jpg",
+      "https://tajnachalupka.github.io/mp/20/4.jpg",
+      "https://tajnachalupka.github.io/mp/20/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "21": [
+      "https://tajnachalupka.github.io/mp/21/1.jpg",
+      "https://tajnachalupka.github.io/mp/21/2.jpg",
+      "https://tajnachalupka.github.io/mp/21/3.jpg",
+      "https://tajnachalupka.github.io/mp/21/4.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "22": [
+      "https://tajnachalupka.github.io/mp/22/1.jpg",
+      "https://tajnachalupka.github.io/mp/22/2.jpg",
+      "https://tajnachalupka.github.io/mp/22/3.jpg",
+      "https://tajnachalupka.github.io/mp/22/4.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "23": [
+      "https://tajnachalupka.github.io/mp/23/1a.jpg",
+      "https://tajnachalupka.github.io/mp/23/1b.jpg",
+      "https://tajnachalupka.github.io/mp/23/1c.jpg",
+      "https://tajnachalupka.github.io/mp/23/2.jpg",
+      "https://tajnachalupka.github.io/mp/23/3.jpg",
+      "https://tajnachalupka.github.io/mp/23/4.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "24": [
+      "https://tajnachalupka.github.io/mp/24/1.jpg",
+      "https://tajnachalupka.github.io/mp/24/2.jpg",
+      "https://tajnachalupka.github.io/mp/24/3.jpg",
+      "https://tajnachalupka.github.io/mp/24/4.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "25": [
+      "https://tajnachalupka.github.io/mp/25/1.jpg",
+      "https://tajnachalupka.github.io/mp/25/2.jpg",
+      "https://tajnachalupka.github.io/mp/25/3.jpg",
+      "https://tajnachalupka.github.io/mp/25/4.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "26": [
+      "https://tajnachalupka.github.io/mp/26/0.jpg",
+      "https://tajnachalupka.github.io/mp/26/1.jpg",
+      "https://tajnachalupka.github.io/mp/26/2.jpg",
+      "https://tajnachalupka.github.io/mp/26/3.jpg",
+      "https://tajnachalupka.github.io/mp/26/4.jpg",
+      "https://tajnachalupka.github.io/mp/26/5.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "26.5": [
+      "https://tajnachalupka.github.io/mp/26.5/0.jpg",
+      "https://tajnachalupka.github.io/mp/26.5/1.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ]
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "slug": "afos",
+  "title": "a first of summers",
+  "header_img": "https://tajnachalupka.github.io/main/tagi/afos.png",
+  "series_icon": "https://tajnachalupka.github.io/main/guzik-gora/afos.png",
+  "cover": "https://tajnachalupka.github.io/main/covers/afos.png",
+  "desc": "Hyunsun, prowadzący wyjątkowo zwyczajne życie, osiąga kamień milowy - 40. urodziny, Chcąc zacząć coś nowego zanim będzie za późno, zapisuje się do szkoły gitarowej. Tam spotyka młodego instruktora o imieniu Yeoreum i po raz pierwszy od dawna odczuwa prawdziwą pasję do życia. Gdy ich więź pogłębia się i Yeoreum zaczyna okazywać mu swoje szczere i ujmujące uczucia, ich relacja staje w obliczu nowej sytuacji…<br><br>*odcenzurowanie mieczy świetlnych - ruoye_chan<br>Od ch. 44 są dwie wersje rozdziałów 18+:<br>censored: z mieczami świetlnymi, oryginalna<br>♡ uncensored: jak dorysuję co trzeba<br>Wszystkie rozdziały przed 44 są tylko w wersji bez cenzury.",
+  "seasons": {
+  "Sezon 1.": { "from": "1", "to": "40" },
+  "Sezon 2.": { "from": "41", "to": "∞" }
+},
+  "padlet": "https://padlet.com/vvvvvvvvvvvvvvvv/a-first-of-summers-xvfowvg6hnywhy1s",
+  "disqus_base": "afos",
+  "chapters": {
+    "1": [
+      "https://tajnachalupka.github.io/afos/01/1.jpg",
+      "https://tajnachalupka.github.io/afos/01/2.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "2": [
+      "https://tajnachalupka.github.io/afos/02/1.jpg",
+      "https://tajnachalupka.github.io/afos/02/2.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+     ],
+    "3": [
+      "https://tajnachalupka.github.io/afos/03/1.jpg",
+      "https://tajnachalupka.github.io/afos/03/2.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "4": [
+      "https://tajnachalupka.github.io/afos/04/1.jpg",
+      "https://tajnachalupka.github.io/afos/04/2.jpg",
+      "https://tajnachalupka.github.io/afos/04/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "5": [
+      "https://tajnachalupka.github.io/afos/05/1.jpg",
+      "https://tajnachalupka.github.io/afos/05/2.jpg",
+      "https://tajnachalupka.github.io/afos/05/3.jpg",
+      "https://tajnachalupka.github.io/afos/05/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "6": [
+      "https://tajnachalupka.github.io/afos/06/1.jpg",
+      "https://tajnachalupka.github.io/afos/06/2.jpg",
+      "https://tajnachalupka.github.io/afos/06/3.jpg",
+      "https://tajnachalupka.github.io/afos/06/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "7": [
+      "https://tajnachalupka.github.io/afos/07/1.jpg",
+      "https://tajnachalupka.github.io/afos/07/2.jpg",
+      "https://tajnachalupka.github.io/afos/07/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "8": [
+      "https://tajnachalupka.github.io/afos/08/1.jpg",
+      "https://tajnachalupka.github.io/afos/08/2.jpg",
+      "https://tajnachalupka.github.io/afos/08/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "9": [
+      "https://tajnachalupka.github.io/afos/09/1.jpg",
+      "https://tajnachalupka.github.io/afos/09/2.jpg",
+      "https://tajnachalupka.github.io/afos/09/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "10": [
+      "https://tajnachalupka.github.io/afos/10/1.jpg",
+      "https://tajnachalupka.github.io/afos/10/2.jpg",
+      "https://tajnachalupka.github.io/afos/10/3.jpg",
+      "https://tajnachalupka.github.io/afos/10/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "11": [
+      "https://tajnachalupka.github.io/afos/11/1.jpg",
+      "https://tajnachalupka.github.io/afos/11/2.jpg",
+      "https://tajnachalupka.github.io/afos/11/3.jpg",
+      "https://tajnachalupka.github.io/afos/11/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "12": [
+      "https://tajnachalupka.github.io/afos/12/1.jpg",
+      "https://tajnachalupka.github.io/afos/12/2.jpg",
+      "https://tajnachalupka.github.io/afos/12/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "13": [
+      "https://tajnachalupka.github.io/afos/13/1.jpg",
+      "https://tajnachalupka.github.io/afos/13/2.jpg",
+      "https://tajnachalupka.github.io/afos/13/3.jpg",
+      "https://tajnachalupka.github.io/afos/13/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "14": [
+      "https://tajnachalupka.github.io/afos/14/1.jpg",
+      "https://tajnachalupka.github.io/afos/14/2.jpg",
+      "https://tajnachalupka.github.io/afos/14/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "15": [
+      "https://tajnachalupka.github.io/afos/15/1.jpg",
+      "https://tajnachalupka.github.io/afos/15/2.jpg",
+      "https://tajnachalupka.github.io/afos/15/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "16": [
+      "https://tajnachalupka.github.io/afos/16/1-0-0.jpg",
+      "https://tajnachalupka.github.io/afos/16/1-0-1.jpg",
+      "https://tajnachalupka.github.io/afos/16/2.jpg",
+      "https://tajnachalupka.github.io/afos/16/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "17": [
+      "https://tajnachalupka.github.io/afos/17/1.jpg",
+      "https://tajnachalupka.github.io/afos/17/2.jpg",
+      "https://tajnachalupka.github.io/afos/17/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "18": [
+      "https://tajnachalupka.github.io/afos/18/1.jpg",
+      "https://tajnachalupka.github.io/afos/18/2.jpg",
+      "https://tajnachalupka.github.io/afos/18/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "19": [
+      "https://tajnachalupka.github.io/afos/19/1.jpg",
+      "https://tajnachalupka.github.io/afos/19/2.jpg",
+      "https://tajnachalupka.github.io/afos/19/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "20": [
+      "https://tajnachalupka.github.io/afos/20/1.jpg",
+      "https://tajnachalupka.github.io/afos/20/2.jpg",
+      "https://tajnachalupka.github.io/afos/20/3.jpg",
+      "https://tajnachalupka.github.io/afos/20/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "21": [
+      "https://tajnachalupka.github.io/afos/21/1.jpg",
+      "https://tajnachalupka.github.io/afos/21/2.jpg",
+      "https://tajnachalupka.github.io/afos/21/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "22": [
+      "https://tajnachalupka.github.io/afos/22/1.jpg",
+      "https://tajnachalupka.github.io/afos/22/2.jpg",
+      "https://tajnachalupka.github.io/afos/22/3.jpg",
+      "https://tajnachalupka.github.io/afos/22/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "23": [
+      "https://tajnachalupka.github.io/afos/23/1.jpg",
+      "https://tajnachalupka.github.io/afos/23/2.jpg",
+      "https://tajnachalupka.github.io/afos/23/3.jpg",
+      "https://tajnachalupka.github.io/afos/23/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "24": [
+      "https://tajnachalupka.github.io/afos/24/1.jpg",
+      "https://tajnachalupka.github.io/afos/24/2.jpg",
+      "https://tajnachalupka.github.io/afos/24/3.jpg",
+      "https://tajnachalupka.github.io/afos/24/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "25": [
+      "https://tajnachalupka.github.io/afos/25/1.jpg",
+      "https://tajnachalupka.github.io/afos/25/2.jpg",
+      "https://tajnachalupka.github.io/afos/25/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "26": [
+      "https://tajnachalupka.github.io/afos/26/1.jpg",
+      "https://tajnachalupka.github.io/afos/26/2.jpg",
+      "https://tajnachalupka.github.io/afos/26/3.jpg",
+      "https://tajnachalupka.github.io/afos/26/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "27": [
+      "https://tajnachalupka.github.io/afos/27/1.jpg",
+      "https://tajnachalupka.github.io/afos/27/2.jpg",
+      "https://tajnachalupka.github.io/afos/27/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "28": [
+      "https://tajnachalupka.github.io/afos/28/1.jpg",
+      "https://tajnachalupka.github.io/afos/28/2.jpg",
+      "https://tajnachalupka.github.io/afos/28/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "29": [
+      "https://tajnachalupka.github.io/afos/29/1.jpg",
+      "https://tajnachalupka.github.io/afos/29/2.jpg",
+      "https://tajnachalupka.github.io/afos/29/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "30": [
+      "https://tajnachalupka.github.io/afos/30/1.jpg",
+      "https://tajnachalupka.github.io/afos/30/2.jpg",
+      "https://tajnachalupka.github.io/afos/30/3.jpg",
+      "https://tajnachalupka.github.io/afos/30/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "31": [
+      "https://tajnachalupka.github.io/afos/31/1.jpg",
+      "https://tajnachalupka.github.io/afos/31/2.jpg",
+      "https://tajnachalupka.github.io/afos/31/3.jpg",
+      "https://tajnachalupka.github.io/afos/31/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "32": [
+      "https://tajnachalupka.github.io/afos/32/1.jpg",
+      "https://tajnachalupka.github.io/afos/32/2.jpg",
+      "https://tajnachalupka.github.io/afos/32/3.jpg",
+      "https://tajnachalupka.github.io/afos/32/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "33": [
+      "https://tajnachalupka.github.io/afos/33/1.jpg",
+      "https://tajnachalupka.github.io/afos/33/2.jpg",
+      "https://tajnachalupka.github.io/afos/33/3.jpg",
+      "https://tajnachalupka.github.io/afos/33/4.jpg",
+      "https://tajnachalupka.github.io/afos/33/5.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "34": [
+      "https://tajnachalupka.github.io/afos/34/1.jpg",
+      "https://tajnachalupka.github.io/afos/34/2.jpg",
+      "https://tajnachalupka.github.io/afos/34/3.jpg",
+      "https://tajnachalupka.github.io/afos/34/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "35": [
+      "https://tajnachalupka.github.io/afos/35/1.jpg",
+      "https://tajnachalupka.github.io/afos/35/2.jpg",
+      "https://tajnachalupka.github.io/afos/35/3.jpg",
+      "https://tajnachalupka.github.io/afos/35/4.jpg",
+      "https://tajnachalupka.github.io/afos/35/5.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "36": [
+      "https://tajnachalupka.github.io/afos/36/1.jpg",
+      "https://tajnachalupka.github.io/afos/36/2.jpg",
+      "https://tajnachalupka.github.io/afos/36/3.jpg",
+      "https://tajnachalupka.github.io/afos/36/4.jpg",
+      "https://tajnachalupka.github.io/afos/36/5.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "37": [
+      "https://tajnachalupka.github.io/afos/37/1.jpg",
+      "https://tajnachalupka.github.io/afos/37/2.jpg",
+      "https://tajnachalupka.github.io/afos/37/3.jpg",
+      "https://tajnachalupka.github.io/afos/37/4.jpg",
+      "https://tajnachalupka.github.io/afos/37/5.jpg",
+      "https://tajnachalupka.github.io/afos/37/6.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "38": [
+      "https://tajnachalupka.github.io/afos/38/1.jpg",
+      "https://tajnachalupka.github.io/afos/38/2.jpg",
+      "https://tajnachalupka.github.io/afos/38/3.jpg",
+      "https://tajnachalupka.github.io/afos/38/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "39": [
+      "https://tajnachalupka.github.io/afos/39/1.jpg",
+      "https://tajnachalupka.github.io/afos/39/2.jpg",
+      "https://tajnachalupka.github.io/afos/39/3.jpg",
+      "https://tajnachalupka.github.io/afos/39/4.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "40": [
+      "https://tajnachalupka.github.io/afos/40/1.jpg",
+      "https://tajnachalupka.github.io/afos/40/2.jpg",
+      "https://tajnachalupka.github.io/afos/40/3.jpg",
+      "https://tajnachalupka.github.io/afos/40/4.jpg",
+      "https://tajnachalupka.github.io/afos/40/5.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "41": [
+      "https://tajnachalupka.github.io/afos/41/1.jpg",
+      "https://tajnachalupka.github.io/afos/41/2.jpg",
+      "https://tajnachalupka.github.io/afos/41/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "42": [
+      "https://tajnachalupka.github.io/afos/42/1.jpg",
+      "https://tajnachalupka.github.io/afos/42/2.jpg",
+      "https://tajnachalupka.github.io/afos/42/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "43": [
+      "https://tajnachalupka.github.io/afos/43/1.jpg",
+      "https://tajnachalupka.github.io/afos/43/2.jpg",
+      "https://tajnachalupka.github.io/afos/43/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "44": [
+      "https://tajnachalupka.github.io/afos/44/1.jpg",
+      "https://tajnachalupka.github.io/afos/44/2.jpg",
+      "https://tajnachalupka.github.io/afos/44/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "44♡": [
+      "https://tajnachalupka.github.io/afos/44u/1.jpg",
+      "https://tajnachalupka.github.io/afos/44u/2.jpg",
+      "https://tajnachalupka.github.io/afos/44u/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "45": [
+      "https://tajnachalupka.github.io/afos/45/1.jpg",
+      "https://tajnachalupka.github.io/afos/45/2.jpg",
+      "https://tajnachalupka.github.io/afos/45/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "46": [
+      "https://tajnachalupka.github.io/afos/46/1.jpg",
+      "https://tajnachalupka.github.io/afos/46/2.jpg",
+      "https://tajnachalupka.github.io/afos/46/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "46♡": [
+      "https://tajnachalupka.github.io/afos/46u/1.jpg",
+      "https://tajnachalupka.github.io/afos/46u/2.jpg",
+      "https://tajnachalupka.github.io/afos/46u/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "47": [
+      "https://tajnachalupka.github.io/afos/47/1.jpg",
+      "https://tajnachalupka.github.io/afos/47/2.jpg",
+      "https://tajnachalupka.github.io/afos/47/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "48": [
+      "https://tajnachalupka.github.io/afos/48/1.jpg",
+      "https://tajnachalupka.github.io/afos/48/2.jpg",
+      "https://tajnachalupka.github.io/afos/48/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "49": [
+      "https://tajnachalupka.github.io/afos/49/1.jpg",
+      "https://tajnachalupka.github.io/afos/49/2.jpg",
+      "https://tajnachalupka.github.io/afos/49/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "49♡": [
+      "https://tajnachalupka.github.io/afos/49u/1.jpg",
+      "https://tajnachalupka.github.io/afos/49u/2.jpg",
+      "https://tajnachalupka.github.io/afos/49u/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "50": [
+      "https://tajnachalupka.github.io/afos/50/1.jpg",
+      "https://tajnachalupka.github.io/afos/50/2.jpg",
+      "https://tajnachalupka.github.io/afos/50/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "51": [
+      "https://tajnachalupka.github.io/afos/51/1.jpg",
+      "https://tajnachalupka.github.io/afos/51/2.jpg",
+      "https://tajnachalupka.github.io/afos/51/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "52": [
+      "https://tajnachalupka.github.io/afos/52/1.jpg",
+      "https://tajnachalupka.github.io/afos/52/2.jpg",
+      "https://tajnachalupka.github.io/afos/52/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "53": [
+      "https://tajnachalupka.github.io/afos/53/1.jpg",
+      "https://tajnachalupka.github.io/afos/53/2.jpg",
+      "https://tajnachalupka.github.io/afos/53/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "53♡": [
+      "https://tajnachalupka.github.io/afos/53uncensored/1.jpg",
+      "https://tajnachalupka.github.io/afos/53uncensored/2.jpg",
+      "https://tajnachalupka.github.io/afos/53uncensored/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "53": [
+      "https://tajnachalupka.github.io/afos/53/1.jpg",
+      "https://tajnachalupka.github.io/afos/53/2.jpg",
+      "https://tajnachalupka.github.io/afos/53/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "54": [
+      "https://tajnachalupka.github.io/afos/54/1.jpg",
+      "https://tajnachalupka.github.io/afos/54/2.jpg",
+      "https://tajnachalupka.github.io/afos/54/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "55": [
+     "https://tajnachalupka.github.io/afos/55/0.jpg", 
+     "https://tajnachalupka.github.io/afos/55/1.jpg",
+      "https://tajnachalupka.github.io/afos/55/2.jpg",
+      "https://tajnachalupka.github.io/afos/55/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "56": [
+      "https://tajnachalupka.github.io/afos/56/0.jpg", 
+      "https://tajnachalupka.github.io/afos/56/1.jpg",
+      "https://tajnachalupka.github.io/afos/56/2.jpg",
+      "https://tajnachalupka.github.io/afos/56/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "57": [
+      "https://tajnachalupka.github.io/afos/57/0.jpg", 
+      "https://tajnachalupka.github.io/afos/57/1.jpg",
+      "https://tajnachalupka.github.io/afos/57/2.jpg",
+      "https://tajnachalupka.github.io/afos/57/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "58": [
+      "https://tajnachalupka.github.io/afos/58/0.jpg", 
+      "https://tajnachalupka.github.io/afos/58/1.jpg",
+      "https://tajnachalupka.github.io/afos/58/2.jpg",
+      "https://tajnachalupka.github.io/afos/58/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "59": [
+      "https://tajnachalupka.github.io/afos/59/0.jpg", 
+      "https://tajnachalupka.github.io/afos/59/1.jpg",
+      "https://tajnachalupka.github.io/afos/59/2.jpg",
+      "https://tajnachalupka.github.io/afos/59/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ],
+    "59♡": [
+      "https://tajnachalupka.github.io/afos/59un/0.jpg", 
+      "https://tajnachalupka.github.io/afos/59un/1.jpg",
+      "https://tajnachalupka.github.io/afos/59un/2.jpg",
+      "https://tajnachalupka.github.io/afos/59un/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+   ],
+    "60": [
+      "https://tajnachalupka.github.io/afos/60/0.jpg", 
+      "https://tajnachalupka.github.io/afos/60/1.jpg",
+      "https://tajnachalupka.github.io/afos/60/2.jpg",
+      "https://tajnachalupka.github.io/afos/60/3.jpg",
+      "https://tajnachalupka.github.io/afos/00afos.jpg"
+    ]
+  }
+}

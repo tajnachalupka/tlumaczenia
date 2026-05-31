@@ -1,0 +1,522 @@
+{
+  "slug": "osd",
+  "title": "our sunny days",
+  "header_img": "https://tajnachalupka.github.io/main/tagi/osd.png",
+  "series_icon": "https://tajnachalupka.github.io/main/guzik-gora/osd.png",
+  "cover": "https://tajnachalupka.github.io/main/covers/osd.png",
+  "desc": "Sung Ho jest byłym żołnierzem i… samotnym młodym ojcem. Bez pracy i planów, ma nadzieję, że spokojna wieś Nuldongmae stanie się dla niego i jego córki nowym domem. Już pierwszego dnia po przeprowadzce wysoki, przystojny właściciel lokalnego sklepu oskarża go o kradzież. Nowy sąsiad naprawdę działa Ho na nerwy, ale wydaje się, że wie dużo o wiosce… Ho od zawsze był samotnym wędrowcem. Czy będzie w stanie wpuścić kogoś innego do swojego życia?",
+  "seasons": {
+  "Sezon 1.": { "from": "1", "to": "25" },
+  "Sezon 2.": { "from": "26", "to": "51" },
+  "Sezon 3.": { "from": "52", "to": "∞" }
+},
+ "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvv/our-sunny-days-a3k90ueey9qztdri",
+  "disqus_base": "osd",
+  "chapters": {
+    "1": [
+      "https://tajnachalupka.github.io/osd/01/1.jpg",
+      "https://tajnachalupka.github.io/osd/01/2.jpg",
+      "https://tajnachalupka.github.io/osd/01/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "2": [
+      "https://tajnachalupka.github.io/osd/02/1.jpg",
+      "https://tajnachalupka.github.io/osd/02/2.jpg",
+      "https://tajnachalupka.github.io/osd/02/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "3": [
+      "https://tajnachalupka.github.io/osd/03/1.jpg",
+      "https://tajnachalupka.github.io/osd/03/2.jpg",
+      "https://tajnachalupka.github.io/osd/03/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "4": [
+      "https://tajnachalupka.github.io/osd/04/1.jpg",
+      "https://tajnachalupka.github.io/osd/04/2.jpg",
+      "https://tajnachalupka.github.io/osd/04/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "5": [
+      "https://tajnachalupka.github.io/osd/05/1.jpg",
+      "https://tajnachalupka.github.io/osd/05/2.jpg",
+      "https://tajnachalupka.github.io/osd/05/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "6": [
+      "https://tajnachalupka.github.io/osd/06/1.jpg",
+      "https://tajnachalupka.github.io/osd/06/2.jpg",
+      "https://tajnachalupka.github.io/osd/06/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "7": [
+      "https://tajnachalupka.github.io/osd/07/1.jpg",
+      "https://tajnachalupka.github.io/osd/07/2.jpg",
+      "https://tajnachalupka.github.io/osd/07/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "8": [
+      "https://tajnachalupka.github.io/osd/08/1.jpg",
+      "https://tajnachalupka.github.io/osd/08/2.jpg",
+      "https://tajnachalupka.github.io/osd/08/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "9": [
+      "https://tajnachalupka.github.io/osd/09/1.jpg",
+      "https://tajnachalupka.github.io/osd/09/2.jpg",
+      "https://tajnachalupka.github.io/osd/09/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "10": [
+      "https://tajnachalupka.github.io/osd/10/1.jpg",
+      "https://tajnachalupka.github.io/osd/10/2.jpg",
+      "https://tajnachalupka.github.io/osd/10/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "11": [
+      "https://tajnachalupka.github.io/osd/11/1.jpg",
+      "https://tajnachalupka.github.io/osd/11/2.jpg",
+      "https://tajnachalupka.github.io/osd/11/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "12": [
+      "https://tajnachalupka.github.io/osd/12/1.jpg",
+      "https://tajnachalupka.github.io/osd/12/2.jpg",
+      "https://tajnachalupka.github.io/osd/12/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "13": [
+      "https://tajnachalupka.github.io/osd/13/1.jpg",
+      "https://tajnachalupka.github.io/osd/13/2.jpg",
+      "https://tajnachalupka.github.io/osd/13/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "14": [
+      "https://tajnachalupka.github.io/osd/14/1.jpg",
+      "https://tajnachalupka.github.io/osd/14/2.jpg",
+      "https://tajnachalupka.github.io/osd/14/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "15": [
+      "https://tajnachalupka.github.io/osd/15/1.jpg",
+      "https://tajnachalupka.github.io/osd/15/2.jpg",
+      "https://tajnachalupka.github.io/osd/15/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "16": [
+      "https://tajnachalupka.github.io/osd/16/1.jpg",
+      "https://tajnachalupka.github.io/osd/16/2.jpg",
+      "https://tajnachalupka.github.io/osd/16/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "17": [
+      "https://tajnachalupka.github.io/osd/17/1.jpg",
+      "https://tajnachalupka.github.io/osd/17/2.jpg",
+      "https://tajnachalupka.github.io/osd/17/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "18": [
+      "https://tajnachalupka.github.io/osd/18/1.jpg",
+      "https://tajnachalupka.github.io/osd/18/2.jpg",
+      "https://tajnachalupka.github.io/osd/18/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "19": [
+      "https://tajnachalupka.github.io/osd/19/1.jpg",
+      "https://tajnachalupka.github.io/osd/19/2.jpg",
+      "https://tajnachalupka.github.io/osd/19/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "20": [
+      "https://tajnachalupka.github.io/osd/20/1.jpg",
+      "https://tajnachalupka.github.io/osd/20/2.jpg",
+      "https://tajnachalupka.github.io/osd/20/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "21": [
+      "https://tajnachalupka.github.io/osd/21/1.jpg",
+      "https://tajnachalupka.github.io/osd/21/2.jpg",
+      "https://tajnachalupka.github.io/osd/21/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "22": [
+      "https://tajnachalupka.github.io/osd/22/1.jpg",
+      "https://tajnachalupka.github.io/osd/22/2.jpg",
+      "https://tajnachalupka.github.io/osd/22/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "23": [
+      "https://tajnachalupka.github.io/osd/23/1.jpg",
+      "https://tajnachalupka.github.io/osd/23/2.jpg",
+      "https://tajnachalupka.github.io/osd/23/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "24": [
+      "https://tajnachalupka.github.io/osd/24/1.jpg",
+      "https://tajnachalupka.github.io/osd/24/2.jpg",
+      "https://tajnachalupka.github.io/osd/24/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "25": [
+      "https://tajnachalupka.github.io/osd/25/1.jpg",
+      "https://tajnachalupka.github.io/osd/25/2.jpg",
+      "https://tajnachalupka.github.io/osd/25/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "26": [
+      "https://tajnachalupka.github.io/osd/26/1.jpg",
+      "https://tajnachalupka.github.io/osd/26/2.jpg",
+      "https://tajnachalupka.github.io/osd/26/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "27": [
+      "https://tajnachalupka.github.io/osd/27/1.jpg",
+      "https://tajnachalupka.github.io/osd/27/2.jpg",
+      "https://tajnachalupka.github.io/osd/27/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "28": [
+      "https://tajnachalupka.github.io/osd/28/1.jpg",
+      "https://tajnachalupka.github.io/osd/28/2.jpg",
+      "https://tajnachalupka.github.io/osd/28/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "29": [
+      "https://tajnachalupka.github.io/osd/29/1.jpg",
+      "https://tajnachalupka.github.io/osd/29/2.jpg",
+      "https://tajnachalupka.github.io/osd/29/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "30": [
+      "https://tajnachalupka.github.io/osd/30/1.jpg",
+      "https://tajnachalupka.github.io/osd/30/2.jpg",
+      "https://tajnachalupka.github.io/osd/30/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "31": [
+      "https://tajnachalupka.github.io/osd/31/1.jpg",
+      "https://tajnachalupka.github.io/osd/31/2.jpg",
+      "https://tajnachalupka.github.io/osd/31/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "32": [
+      "https://tajnachalupka.github.io/osd/32/1.jpg",
+      "https://tajnachalupka.github.io/osd/32/2.jpg",
+      "https://tajnachalupka.github.io/osd/32/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "33": [
+      "https://tajnachalupka.github.io/osd/33/1.jpg",
+      "https://tajnachalupka.github.io/osd/33/2.jpg",
+      "https://tajnachalupka.github.io/osd/33/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "34": [
+      "https://tajnachalupka.github.io/osd/34/1.jpg",
+      "https://tajnachalupka.github.io/osd/34/2.jpg",
+      "https://tajnachalupka.github.io/osd/34/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "35": [
+      "https://tajnachalupka.github.io/osd/35/1.jpg",
+      "https://tajnachalupka.github.io/osd/35/2.jpg",
+      "https://tajnachalupka.github.io/osd/35/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "36": [
+      "https://tajnachalupka.github.io/osd/36/1.jpg",
+      "https://tajnachalupka.github.io/osd/36/2.jpg",
+      "https://tajnachalupka.github.io/osd/36/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "37": [
+      "https://tajnachalupka.github.io/osd/37/1.jpg",
+      "https://tajnachalupka.github.io/osd/37/2.jpg",
+      "https://tajnachalupka.github.io/osd/37/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "38": [
+      "https://tajnachalupka.github.io/osd/38/1.jpg",
+      "https://tajnachalupka.github.io/osd/38/2.jpg",
+      "https://tajnachalupka.github.io/osd/38/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "39": [
+      "https://tajnachalupka.github.io/osd/39/1.jpg",
+      "https://tajnachalupka.github.io/osd/39/2.jpg",
+      "https://tajnachalupka.github.io/osd/39/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "40": [
+      "https://tajnachalupka.github.io/osd/40/1.jpg",
+      "https://tajnachalupka.github.io/osd/40/2.jpg",
+      "https://tajnachalupka.github.io/osd/40/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "41": [
+      "https://tajnachalupka.github.io/osd/41/1.jpg",
+      "https://tajnachalupka.github.io/osd/41/2.jpg",
+      "https://tajnachalupka.github.io/osd/41/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "42": [
+      "https://tajnachalupka.github.io/osd/42/1.jpg",
+      "https://tajnachalupka.github.io/osd/42/2.jpg",
+      "https://tajnachalupka.github.io/osd/42/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "43": [
+      "https://tajnachalupka.github.io/osd/43/1.jpg",
+      "https://tajnachalupka.github.io/osd/43/2.jpg",
+      "https://tajnachalupka.github.io/osd/43/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "44": [
+      "https://tajnachalupka.github.io/osd/44/1.jpg",
+      "https://tajnachalupka.github.io/osd/44/2.jpg",
+      "https://tajnachalupka.github.io/osd/44/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "45": [
+      "https://tajnachalupka.github.io/osd/45/1.jpg",
+      "https://tajnachalupka.github.io/osd/45/2.jpg",
+      "https://tajnachalupka.github.io/osd/45/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "45.5": [
+      "https://tajnachalupka.github.io/osd/45.5/1.jpg",
+      "https://tajnachalupka.github.io/osd/45.5/2.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "46": [
+      "https://tajnachalupka.github.io/osd/46/1.jpg",
+      "https://tajnachalupka.github.io/osd/46/2.jpg",
+      "https://tajnachalupka.github.io/osd/46/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "47": [
+      "https://tajnachalupka.github.io/osd/47/1.jpg",
+      "https://tajnachalupka.github.io/osd/47/2.jpg",
+      "https://tajnachalupka.github.io/osd/47/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "48": [
+      "https://tajnachalupka.github.io/osd/48/1.jpg",
+      "https://tajnachalupka.github.io/osd/48/2.jpg",
+      "https://tajnachalupka.github.io/osd/48/3.jpg",
+      "https://tajnachalupka.github.io/osd/48/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "49": [
+      "https://tajnachalupka.github.io/osd/49/1.jpg",
+      "https://tajnachalupka.github.io/osd/49/2.jpg",
+      "https://tajnachalupka.github.io/osd/49/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "50": [
+      "https://tajnachalupka.github.io/osd/50/1.jpg",
+      "https://tajnachalupka.github.io/osd/50/2.jpg",
+      "https://tajnachalupka.github.io/osd/50/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "51": [
+      "https://tajnachalupka.github.io/osd/51/1.jpg",
+      "https://tajnachalupka.github.io/osd/51/2.jpg",
+      "https://tajnachalupka.github.io/osd/51/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "51.5": [
+      "https://tajnachalupka.github.io/osd/51.5/1.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "52": [
+      "https://tajnachalupka.github.io/osd/52/1.jpg",
+      "https://tajnachalupka.github.io/osd/52/2.jpg",
+      "https://tajnachalupka.github.io/osd/52/3.jpg",
+      "https://tajnachalupka.github.io/osd/52/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "53": [
+      "https://tajnachalupka.github.io/osd/53/1.jpg",
+      "https://tajnachalupka.github.io/osd/53/2.jpg",
+      "https://tajnachalupka.github.io/osd/53/3.jpg",
+      "https://tajnachalupka.github.io/osd/53/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "54": [
+      "https://tajnachalupka.github.io/osd/54/1.jpg",
+      "https://tajnachalupka.github.io/osd/54/2.jpg",
+      "https://tajnachalupka.github.io/osd/54/3.jpg",
+      "https://tajnachalupka.github.io/osd/54/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "55": [
+      "https://tajnachalupka.github.io/osd/55/1.jpg",
+      "https://tajnachalupka.github.io/osd/55/2.jpg",
+      "https://tajnachalupka.github.io/osd/55/3.jpg",
+      "https://tajnachalupka.github.io/osd/55/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "56": [
+      "https://tajnachalupka.github.io/osd/56/1.jpg",
+      "https://tajnachalupka.github.io/osd/56/2.jpg",
+      "https://tajnachalupka.github.io/osd/56/3.jpg",
+      "https://tajnachalupka.github.io/osd/56/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "57": [
+      "https://tajnachalupka.github.io/osd/57/1.jpg",
+      "https://tajnachalupka.github.io/osd/57/2.jpg",
+      "https://tajnachalupka.github.io/osd/57/3.jpg",
+      "https://tajnachalupka.github.io/osd/57/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "58": [
+      "https://tajnachalupka.github.io/osd/58/1.jpg",
+      "https://tajnachalupka.github.io/osd/58/2.jpg",
+      "https://tajnachalupka.github.io/osd/58/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "59": [
+      "https://tajnachalupka.github.io/osd/59/1.jpg",
+      "https://tajnachalupka.github.io/osd/59/2.jpg",
+      "https://tajnachalupka.github.io/osd/59/3.jpg",
+      "https://tajnachalupka.github.io/osd/59/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "60": [
+      "https://tajnachalupka.github.io/osd/60/1.jpg",
+      "https://tajnachalupka.github.io/osd/60/2.jpg",
+      "https://tajnachalupka.github.io/osd/60/3.jpg",
+      "https://tajnachalupka.github.io/osd/60/4.jpg",
+      "https://tajnachalupka.github.io/osd/60/5.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "61": [
+      "https://tajnachalupka.github.io/osd/61/1.jpg",
+      "https://tajnachalupka.github.io/osd/61/2.jpg",
+      "https://tajnachalupka.github.io/osd/61/3.jpg",
+      "https://tajnachalupka.github.io/osd/61/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "62": [
+      "https://tajnachalupka.github.io/osd/62/1.jpg",
+      "https://tajnachalupka.github.io/osd/62/2.jpg",
+      "https://tajnachalupka.github.io/osd/62/3.jpg",
+      "https://tajnachalupka.github.io/osd/62/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "62.5": [
+      "https://tajnachalupka.github.io/osd/62.5/1.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "63": [
+      "https://tajnachalupka.github.io/osd/63/1.jpg",
+      "https://tajnachalupka.github.io/osd/63/2.jpg",
+      "https://tajnachalupka.github.io/osd/63/3.jpg",
+      "https://tajnachalupka.github.io/osd/63/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "64": [
+      "https://tajnachalupka.github.io/osd/64/1.jpg",
+      "https://tajnachalupka.github.io/osd/64/2.jpg",
+      "https://tajnachalupka.github.io/osd/64/3.jpg",
+      "https://tajnachalupka.github.io/osd/64/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "65": [
+      "https://tajnachalupka.github.io/osd/65/1.jpg",
+      "https://tajnachalupka.github.io/osd/65/2.jpg",
+      "https://tajnachalupka.github.io/osd/65/3.jpg",
+      "https://tajnachalupka.github.io/osd/65/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "66": [
+      "https://tajnachalupka.github.io/osd/66/1.jpg",
+      "https://tajnachalupka.github.io/osd/66/2.jpg",
+      "https://tajnachalupka.github.io/osd/66/3.jpg",
+      "https://tajnachalupka.github.io/osd/66/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "67": [
+      "https://tajnachalupka.github.io/osd/67/1.jpg",
+      "https://tajnachalupka.github.io/osd/67/2.jpg",
+      "https://tajnachalupka.github.io/osd/67/3.jpg",
+      "https://tajnachalupka.github.io/osd/67/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "68": [
+      "https://tajnachalupka.github.io/osd/68/1.jpg",
+      "https://tajnachalupka.github.io/osd/68/2.jpg",
+      "https://tajnachalupka.github.io/osd/68/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "68.5": [
+      "https://tajnachalupka.github.io/osd/68.5/1.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "69": [
+      "https://tajnachalupka.github.io/osd/69/1.jpg",
+      "https://tajnachalupka.github.io/osd/69/2.jpg",
+      "https://tajnachalupka.github.io/osd/69/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "70": [
+      "https://tajnachalupka.github.io/osd/70/1.jpg",
+      "https://tajnachalupka.github.io/osd/70/2.jpg",
+      "https://tajnachalupka.github.io/osd/70/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "71": [
+      "https://tajnachalupka.github.io/osd/71/1.jpg",
+      "https://tajnachalupka.github.io/osd/71/2.jpg",
+      "https://tajnachalupka.github.io/osd/71/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "72": [
+      "https://tajnachalupka.github.io/osd/72/1.jpg",
+      "https://tajnachalupka.github.io/osd/72/2.jpg",
+      "https://tajnachalupka.github.io/osd/72/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "73": [
+      "https://tajnachalupka.github.io/osd/73/1.jpg",
+      "https://tajnachalupka.github.io/osd/73/2.jpg",
+      "https://tajnachalupka.github.io/osd/73/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "74": [
+      "https://tajnachalupka.github.io/osd/74/1.jpg",
+      "https://tajnachalupka.github.io/osd/74/2.jpg",
+      "https://tajnachalupka.github.io/osd/74/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "75": [
+      "https://tajnachalupka.github.io/osd/75/1.jpg",
+      "https://tajnachalupka.github.io/osd/75/2.jpg",
+      "https://tajnachalupka.github.io/osd/75/3.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "76": [
+      "https://tajnachalupka.github.io/osd/76/1.jpg",
+      "https://tajnachalupka.github.io/osd/76/2.jpg",
+      "https://tajnachalupka.github.io/osd/76/3.jpg",
+      "https://tajnachalupka.github.io/osd/76/4.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "77": [
+      "https://tajnachalupka.github.io/osd/77/0.jpg",
+      "https://tajnachalupka.github.io/osd/77/1.jpg",
+      "https://tajnachalupka.github.io/osd/77/2.jpg",
+      "https://tajnachalupka.github.io/osd/77/3.jpg",
+      "https://tajnachalupka.github.io/osd/77/4.jpg",
+      "https://tajnachalupka.github.io/osd/77/5.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ],
+    "77.5": [
+      "https://tajnachalupka.github.io/osd/77.5/0.jpg",
+      "https://tajnachalupka.github.io/osd/77.5/1.jpg",
+      "https://tajnachalupka.github.io/osd/osd-coins.jpg"
+    ]
+  }
+}

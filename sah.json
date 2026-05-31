@@ -1,0 +1,66 @@
+{
+  "slug": "sah",
+  "title": "sahan",
+  "header_img": "https://tajnachalupka.github.io/main/tagi/sah.png",
+  "series_icon": "https://tajnachalupka.github.io/main/guzik-gora/sah.png",
+  "cover": "https://tajnachalupka.github.io/main/covers/sah.png",
+  "desc": "Choć technologia kosmiczna jest niezwykle rozwinięta, statek Sahana lecący na Księżyc ulega katastrofie, a on sam spędza rok, dryfując w przestrzeni. Kiedy w końcu zostaje odnaleziony i wraca na Ziemię, okazuje się, że tutaj minęło już jedenaście lat. Próbując poradzić sobie z traumą i odnaleźć się w świecie, który dawno poszedł naprzód bez niego, Sahan niespodziewanie znajduje oparcie w Heegeonie, chłopcu z sąsiedztwa, który teraz jest dorosły i nigdy o nim nie zapomniał...",
+  "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvvv/sahan-fyxbs54jbh7nqvk4",
+  "disqus_base": "sah",
+  "chapters": {
+    "0": [
+      "https://tajnachalupka.github.io/sah/01/0.jpg",
+      "https://tajnachalupka.github.io/sah/01/1.jpg",
+      "https://tajnachalupka.github.io/sah/01/2.jpg",
+      "https://tajnachalupka.github.io/sah/sah-coins.jpg"
+    ],
+    "1": [
+      "https://tajnachalupka.github.io/sah/01/0.jpg",
+      "https://tajnachalupka.github.io/sah/01/1.jpg",
+      "https://tajnachalupka.github.io/sah/01/2.jpg",
+      "https://tajnachalupka.github.io/sah/01/3.jpg",
+      "https://tajnachalupka.github.io/sah/01/4.jpg",
+      "https://tajnachalupka.github.io/sah/01/5.jpg",
+      "https://tajnachalupka.github.io/sah/sah-coins.jpg"
+    ],
+    "2": [
+      "https://tajnachalupka.github.io/sah/02/0.jpg",
+      "https://tajnachalupka.github.io/sah/02/1.jpg",
+      "https://tajnachalupka.github.io/sah/02/2.jpg",
+      "https://tajnachalupka.github.io/sah/02/3.jpg",
+      "https://tajnachalupka.github.io/sah/02/4.jpg",
+      "https://tajnachalupka.github.io/sah/sah-coins.jpg"
+    ],
+    "3": [
+      "https://tajnachalupka.github.io/sah/03/0.jpg",
+      "https://tajnachalupka.github.io/sah/03/1.jpg",
+      "https://tajnachalupka.github.io/sah/03/2.jpg",
+      "https://tajnachalupka.github.io/sah/03/3.jpg",
+      "https://tajnachalupka.github.io/sah/sah-coins.jpg"
+    ],
+    "4": [
+      "https://tajnachalupka.github.io/sah/04/0.jpg",
+      "https://tajnachalupka.github.io/sah/04/1.jpg",
+      "https://tajnachalupka.github.io/sah/04/2.jpg",
+      "https://tajnachalupka.github.io/sah/04/3.jpg",
+      "https://tajnachalupka.github.io/sah/04/4.jpg",
+      "https://tajnachalupka.github.io/sah/sah-coins.jpg"
+    ],
+    "5": [
+      "https://tajnachalupka.github.io/sah/05/0.jpg",
+      "https://tajnachalupka.github.io/sah/05/1.jpg",
+      "https://tajnachalupka.github.io/sah/05/2.jpg",
+      "https://tajnachalupka.github.io/sah/05/3.jpg",
+      "https://tajnachalupka.github.io/sah/05/4.jpg",
+      "https://tajnachalupka.github.io/sah/sah-coins.jpg"
+    ],
+    "6": [
+      "https://tajnachalupka.github.io/sah/06/0.jpg",
+      "https://tajnachalupka.github.io/sah/06/1.jpg",
+      "https://tajnachalupka.github.io/sah/06/2.jpg",
+      "https://tajnachalupka.github.io/sah/06/3.jpg",
+      "https://tajnachalupka.github.io/sah/06/4.jpg",
+      "https://tajnachalupka.github.io/sah/sah-coins.jpg"
+    ]
+  }
+}

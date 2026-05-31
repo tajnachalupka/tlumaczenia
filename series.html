@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="https://tajnachalupka.github.io/main/favicon.png">
+<title id="page-title">loading...</title>
+
+<style>
+@font-face { font-family: "figtree"; src: url("https://tajnachalupka.github.io/main/Figtree.ttf"); }
+@font-face { font-family: "piekos"; src: url("https://tajnachalupka.github.io/main/Piekos.otf"); font-weight: 300; }
+
+body {
+  margin: 0; background: #191818; color: white;
+  font-family: figtree, sans-serif;
+}
+a { color: white; text-decoration: none; }
+
+/* HOME BUTTON */
+.back {
+  position: fixed; top: 12px; left: 12px;
+  opacity: .9; transition: opacity .2s;
+}
+.back:hover { opacity: 1; }
+.back img { width: 40px; }
+
+/* LAYOUT */
+.comic-layout {
+  display: flex; gap: 32px; padding: 40px;
+  justify-content: center; flex-wrap: wrap;
+}
+.cover { width: 100%; max-width: 299px; height: auto; object-fit: contain; border-radius: 2px; display: none; }
+.comic-info { max-width: 600px; display: flex; flex-direction: column; gap: 16px; text-align: center; }
+.comic-header-img { width: 100%; max-width: 600px; margin: 0 auto 13px; }
+
+/* OPIS */
+.comic-desc { font-size: 17px; color: #e0e0e0; line-height: 1.3; text-align: justify; }
+
+/* SEKCJA */
+.section { padding: 24px 16px; }
+.section h2 { font-size: 26px; font-weight: 100; text-align: center; margin-bottom: 30px; }
+
+/* ROZDZIAŁY */
+.chapter-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, 45px);
+  gap: 11px; justify-content: center;
+  max-width: 600px; margin: 0 auto 40px;
+}
+.chapter-btn {
+  width: 45px; height: 45px; background: #272727;
+  border-radius: 2px; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 200; transition: .2s;
+}
+.chapter-btn:hover { background: #2a2a2a; }
+.chapter-btn.visited { color: #8394F4; }
+
+@media (max-width: 600px) {
+  body { zoom: .9; }
+  .comic-header-img { width: 120%; transform: translateX(-10%); }
+}
+</style>
+</head>
+
+<body>
+
+<a class="back" href="https://diligentin.github.io/tlumaczenia/">
+  <img src="https://tajnachalupka.github.io/main/domek.png">
+</a>
+
+<div class="comic-layout">
+  <img id="cover" class="cover">
+  <div class="comic-info">
+    <img id="header-img" class="comic-header-img">
+    <p id="desc" class="comic-desc"></p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Rozdziały</h2>
+  <div id="chapters-container"></div>
+</div>
+
+<script>
+(async function () {
+
+  /* PARAMETR ?comic= */
+  const comicKey = new URLSearchParams(location.search).get("comic");
+  if (!comicKey) {
+    document.body.innerHTML = "<p style='padding:40px;text-align:center;'>Brak parametru ?comic=</p>";
+    return;
+  }
+
+  /* JSON */
+  let data;
+  try {
+    data = await fetch(`${comicKey}.json`).then(r => r.json());
+  } catch {
+    document.body.innerHTML = "<p style='padding:40px;text-align:center;'>Błąd JSON</p>";
+    return;
+  }
+
+  /* USTAWIENIA */
+  document.getElementById("page-title").textContent = data.title || comicKey;
+  document.getElementById("cover").src = data.cover;
+  cover.onload = () => cover.style.display = "block";
+  document.getElementById("header-img").src = data.header_img;
+  document.getElementById("desc").innerHTML = data.desc.replace(/\n/g, "<br>");
+
+  const container = document.getElementById("chapters-container");
+
+  /* ⭐ PRZYWRÓCONE STARE SORTOWANIE ⭐ */
+  const sorted = Object.keys(data.chapters).sort((a,b)=>{
+      const na = parseInt(a);
+      const nb = parseInt(b);
+      const ha = !isNaN(na);
+      const hb = !isNaN(nb);
+
+      if (ha && hb) {
+        if (na !== nb) return na - nb;
+        return a.localeCompare(b);
+      }
+      if (ha) return -1;
+      if (hb) return 1;
+      return a.localeCompare(b);
+  });
+
+  /* FUNKCJA TWORZENIA PRZYCISKU */
+  function makeBtn(num) {
+    const a = document.createElement("a");
+    a.href = `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(num)}`;
+
+    const btn = document.createElement("div");
+    btn.className = "chapter-btn";
+    btn.textContent = num;
+
+    if (localStorage.getItem(`read_${comicKey}_${num}`) === "1")
+      btn.classList.add("visited");
+
+    a.appendChild(btn);
+    return a;
+  }
+
+  /* BEZ SEZONÓW */
+  if (!data.seasons) {
+    const grid = document.createElement("div");
+    grid.className = "chapter-grid";
+    sorted.forEach(num => grid.appendChild(makeBtn(num)));
+    container.appendChild(grid);
+    return;
+  }
+
+  /* ⭐ Z SEZONAMI — DZIAŁA JAK STARY KOD ⭐ */
+  for (const [seasonName, range] of Object.entries(data.seasons)) {
+
+    const from = range.from === "∞" ? Infinity :
+                 isNaN(parseInt(range.from)) ? range.from : parseInt(range.from);
+
+    const to   = range.to === "∞" ? Infinity :
+                 isNaN(parseInt(range.to)) ? range.to : parseInt(range.to);
+
+    const h = document.createElement("h3");
+    h.style.textAlign = "center";
+    h.style.fontWeight = "50";
+    h.style.fontSize = "20px";
+    h.style.marginTop = "10px";
+    h.textContent = seasonName;
+    container.appendChild(h);
+
+    const grid = document.createElement("div");
+    grid.className = "chapter-grid";
+
+    sorted.forEach(num => {
+
+      let fits = false;
+
+      /* 1) numeryczne w zakresie */
+      if (typeof from === "number" && typeof to === "number") {
+        const n = parseInt(num);
+        if (!isNaN(n) && n >= from && n <= to) fits = true;
+      }
+
+      /* 2) from jako string → dopasowanie dokładne */
+      if (typeof from === "string" && num === from) {
+        fits = true;
+      }
+
+      /* 3) to = Infinity → wszystko od from */
+      if (to === Infinity && typeof from === "number") {
+        const n = parseInt(num);
+        if (!isNaN(n) && n >= from) fits = true;
+      }
+
+      /* ⭐ 4) ROZDZIAŁY Z EMOJI — STARY KOD TEŻ JE WPUSZCZAŁ DO SEZONU
+            jeśli sortowanie ustawiło je między numerami */
+      if (isNaN(parseInt(num))) {
+        fits = true;
+      }
+
+      if (fits) grid.appendChild(makeBtn(num));
+    });
+
+    container.appendChild(grid);
+  }
+
+})();
+</script>
+
+</body>
+</html>
