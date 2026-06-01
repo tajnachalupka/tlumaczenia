@@ -91,7 +91,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
   nextBtn.onclick = () => {};
   prevBtn.onclick = () => {};
-  homeBtn.onclick = () => location.href = "https://tajnachalupka.github.io/tlumaczenia/";
+  homeBtn.onclick = () => location.href = "https://tajnachalupka.wixsite.com/tlumaczenia";
 
   /* DETEKCJA URZĄDZEŃ */
   const USE_SLICER = (() => {
@@ -215,7 +215,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
     if (index !== -1 && index < keys.length - 1) {
       location.href = `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(keys[index + 1])}`;
     } else {
-      location.href = "https://tajnachalupka.github.io/tlumaczenia/";
+      location.href = "https://tajnachalupka.wixsite.com/tlumaczenia";
     }
   };
 
@@ -223,7 +223,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
     if (index > 0) {
       location.href = `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(keys[index - 1])}`;
     } else {
-      location.href = "https://tajnachalupka.github.io/tlumaczenia/";
+      location.href = "https://tajnachalupka.wixsite.com/tlumaczenia";
     }
   };
 
