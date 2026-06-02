@@ -49,6 +49,62 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   transition: opacity .1s ease;
   margin-top: 30px;   
 }
+  
+#chapter_reactions {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.reactions-row {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.reaction-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+.reaction-btn {
+  max-width: 85px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  transition: transform .15s ease, opacity .2s ease;
+}
+
+.reaction-btn:hover {
+  filter: brightness(0.8);
+}
+
+.reaction-btn.clicked {
+  opacity: 0.4;
+  cursor: default;
+  transform: none;
+}
+
+  /* TELEFONY — zmniejszone guziki reakcji */
+@media (max-width: 600px) {
+  .reaction-btn {
+    max-width: 58px;
+    max-height: 58px;
+  }
+
+  .reactions-row {
+    gap: 7px;
+  }
+
+  .reaction-count {
+    font-size: 12px;
+  }
+}
+
+
 </style>
 </head>
 
@@ -67,6 +123,51 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   <div class="nav-btn" id="nextBtn"><img src="https://tajnachalupka.github.io/main/szczala-next.png" class="btn-icon"></div>
   <div class="nav-btn" id="prevBtn"><img src="https://tajnachalupka.github.io/main/szczala-prev.png" class="btn-icon"></div>
   <div class="nav-btn" id="homeBtn"><img src="https://tajnachalupka.github.io/main/domek.png" class="btn-icon"></div>
+</div>
+
+<div id="chapter_reactions">
+  <div class="reactions-row">
+
+    <!-- Reakcja 1 -->
+    <div class="reaction-item">
+      <img class="reaction-btn" data-reaction="0" src="https://tajnachalupka.github.io/main/guziki-reakcji/r1.jpg">
+      <div class="reaction-count">0</div>
+    </div>
+
+    <!-- Reakcja 2 -->
+    <div class="reaction-item">
+      <img class="reaction-btn" data-reaction="1" src="https://tajnachalupka.github.io/main/guziki-reakcji/r2.jpg">
+      <div class="reaction-count">0</div>
+    </div>
+
+    <!-- Reakcja 3 -->
+    <div class="reaction-item">
+      <img class="reaction-btn" data-reaction="2" src="https://tajnachalupka.github.io/main/guziki-reakcji/r3.jpg">
+      <div class="reaction-count">0</div>
+    </div>
+
+    <!-- Reakcja 4 -->
+    <div class="reaction-item">
+      <img class="reaction-btn" data-reaction="3" src="https://tajnachalupka.github.io/main/guziki-reakcji/r4.jpg">
+      <div class="reaction-count">0</div>
+    </div>
+
+    <!-- Reakcja 5 -->
+    <div class="reaction-item">
+      <img class="reaction-btn" data-reaction="4" src="https://tajnachalupka.github.io/main/guziki-reakcji/r5.jpg">
+      <div class="reaction-count">0</div>
+    </div>
+
+    <!-- Reakcja 6 (ukryta) -->
+    <div class="reaction-item" style="display:none;">
+      <img class="reaction-btn" data-reaction="5" src="LINK6">
+      <div class="reaction-count">0</div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
 </div>
 
 <p id="comments_title">Wyświetl komentarze<br>(uwaga na spoilery)</p>
@@ -281,6 +382,8 @@ window.addEventListener("scroll", () => {
   lastScroll = current;
 });
 </script>
+  
+<script type="module" src="reactions.js"></script>
 
 </body>
 </html>
