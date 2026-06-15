@@ -7,7 +7,7 @@
   "desc": "Po dwunastu latach były kolega z drużyny nagle pojawia się ponownie. Eunsan nie jest zachwycony perspektywą współpracy, dawno już pogrzebał swoją skomplikowaną przeszłość związaną z hokejem i wszelkie wspomnienia o Ianie i liczy na to, że ich ponowne spotkanie to tylko jednorazowe wydarzenie. Ian jednak uparcie próbuje zatrzymać go przy sobie, przedstawiając propozycję nie do odrzucenia. Dlaczego Ian nie chce go puścić? Ma jakiś ukryty motyw? Przecież to niemożliwe, żeby coś do niego czuł... prawda?",
    "seasons": {
   "Sezon 1.": { "from": "1", "to": "26" },
-  "Sezon 2.": { "from": "27", "to": "∞" }
+  "Sezon 2.": { "from": "27", "to": "999" }
   "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvv/melting-point-o5kcvpcptb5itui1",
   "disqus_base": "mp",
   "chapters": {
@@ -224,6 +224,13 @@
     "26.5": [
       "https://tajnachalupka.github.io/mp/26.5/0.jpg",
       "https://tajnachalupka.github.io/mp/26.5/1.jpg",
+      "https://tajnachalupka.github.io/mp/mp-coins.jpg"
+    ],
+    "27": [
+      "https://tajnachalupka.github.io/mp/27/1.jpg",
+      "https://tajnachalupka.github.io/mp/27/2.jpg",
+      "https://tajnachalupka.github.io/mp/27/3.jpg",
+      "https://tajnachalupka.github.io/mp/27/4.jpg",
       "https://tajnachalupka.github.io/mp/mp-coins.jpg"
     ]
   }
