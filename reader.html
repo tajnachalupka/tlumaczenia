@@ -15,6 +15,7 @@ body { margin: 0; background: #191818; font-family: figtree, sans-serif;}
 
 img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; image-rendering: -webkit-optimize-contrast; object-fit: contain;}
 
+/* NAV BUTTONS */
 .nav-buttons { position: fixed; bottom: 20px; left: 20px; display: flex; flex-direction: column; gap: 6; opacity: 1; transition: opacity .15s ease;}
 .nav-buttons.hidden { opacity: 0; pointer-events: none;}
 
@@ -22,6 +23,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
 .btn-icon { width: 30px; height: 30px; filter: invert(1); pointer-events: none;}
 
+/* COMMENTS BUTTON */
 #comments_title {
   color: white;
   font-size: 18px;
@@ -34,8 +36,11 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   cursor: pointer;
   transition: background .2s ease;
 }
-#comments_title:hover { background: #333; }
+#comments_title:hover {
+  background: #333;
+}
 
+/* PADLET */
 #padlet_box { 
   padding: 10px; 
   background: #191818; 
@@ -44,12 +49,25 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   transition: opacity .1s ease;
   margin-top: 30px;   
 }
+  
+#chapter_reactions {
+  margin: 40px auto;
+  text-align: center;
+}
 
-#chapter_reactions { margin: 40px auto; text-align: center; }
+.reactions-row {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
 
-.reactions-row { display: flex; justify-content: center; gap: 7px; }
-
-.reaction-item { display: flex; flex-direction: column; align-items: center; color: white; font-size: 14px; }
+.reaction-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
 
 .reaction-btn {
   max-width: 85px;
@@ -59,19 +77,38 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   cursor: pointer;
   transition: transform .15s ease, opacity .2s ease;
 }
-.reaction-btn:hover { filter: brightness(0.8); }
-.reaction-btn.clicked { opacity: 0.4; cursor: default; transform: none; }
 
+.reaction-btn:hover {
+  filter: brightness(0.8);
+}
+
+.reaction-btn.clicked {
+  opacity: 0.4;
+  cursor: default;
+  transform: none;
+}
+
+  /* TELEFONY — zmniejszone guziki reakcji */
 @media (max-width: 600px) {
-  .reaction-btn { max-width: 80px; max-height: 80px; }
-  .reactions-row { gap: 7px; }
-  .reaction-count { font-size: 12px; }
+  .reaction-btn {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .reactions-row {
+    gap: 7px;
+  }
+
+  .reaction-count {
+    font-size: 12px;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER PNG -->
 <div id="series-header" style=" position: fixed; top: 7px; left: 50%; transform: translateX(-50%); z-index: 9999; opacity: 1; transition: opacity .15s ease;">
   <a id="series-link" href="#"><img id="series-img" src="" style="max-height:23px; width:auto;"></a>
 </div>
@@ -79,6 +116,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 <div id="comic-container"></div>
 <p id="chapter_loading" style="margin-top:88px; color:white; text-align:center;">Ładuję rozdział...</p>
 
+<!-- BUTTONS -->
 <div class="nav-buttons" id="nav">
   <div class="nav-btn" id="nextBtn"><img src="https://tajnachalupka.github.io/main/szczala-next.png" class="btn-icon"></div>
   <div class="nav-btn" id="prevBtn"><img src="https://tajnachalupka.github.io/main/szczala-prev.png" class="btn-icon"></div>
@@ -159,7 +197,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   })();
 
   /* SLICER */
-  async function sliceImage(src, sliceHeight = 800) {
+  async function sliceImage(src, sliceHeight = 800) {   // ★ zmiana 2000 → 800
     return new Promise((resolve, reject) => {
       const img = new Image();
       img.crossOrigin = "anonymous";
@@ -200,6 +238,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
       };
 
       img.onerror = () => {
+        // ★ retry — bezpieczny, lekki
         setTimeout(() => {
           img.src = src + "?retry=" + Math.random();
         }, 200);
@@ -229,28 +268,18 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
   const loadingInfo = document.getElementById("chapter_loading");
 
-  /* Wstawianie obrazów + PRELOADING + POPRAWKA LAZY-LOADING */
-  for (let i = 0; i < pages.length; i++) {
-    const src = pages[i];
-
-    /* ★ PRELOADING — ładujemy kolejny obraz w tle */
-    if (i + 1 < pages.length) {
-      const preloadImg = new Image();
-      preloadImg.src = pages[i + 1];
-    }
-
+  /* Wstawianie obrazów */
+  for (const src of pages) {
     await new Promise(r => setTimeout(r, 0));
 
     try {
-      const slices = await sliceImage(src, 800);
+      const slices = await sliceImage(src, 800);   // ★ zmiana 2000 → 800
 
       slices.forEach(url => {
         const img = document.createElement("img");
         img.className = "comic-page";
-
-        img.loading = "lazy";   // ★ JEDYNA ZMIANA — zawsze lazy, jak w starym readerze
-
         img.src = url;
+        img.loading = "lazy";
         container.appendChild(img);
       });
 
@@ -295,10 +324,10 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
     }
   };
 
-  /* PADLET */
+  /* PADLET — tylko po kliknięciu */
   let padletLoaded = false;
 
-  const loadPadlet = () => {
+const loadPadlet = () => {
     if (padletLoaded) return;
     padletLoaded = true;
 
@@ -323,7 +352,8 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
     box.style.visibility = "visible";
     box.style.opacity = "1";
-  };
+};
+
 
   document.getElementById("comments_title").onclick = loadPadlet;
 
@@ -346,7 +376,7 @@ window.addEventListener("scroll", () => {
   lastScroll = current;
 });
 </script>
-
+  
 <script type="module" src="reactions.js"></script>
 
 </body>
