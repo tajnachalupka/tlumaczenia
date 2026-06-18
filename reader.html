@@ -10,113 +10,45 @@
 @font-face { font-family: "figtree"; src: url("https://tajnachalupka.github.io/main/Figtree.ttf") format("truetype");}
 
 body { margin: 0; background: #191818; font-family: figtree, sans-serif;}
-
 #comic-container { max-width: 720px; margin: 0 auto;}
+img.comic-page { width: 100%; display: block; max-width: 720px; image-rendering: -webkit-optimize-contrast; object-fit: contain;}
 
-img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; image-rendering: -webkit-optimize-contrast; object-fit: contain;}
-
-/* NAV BUTTONS */
-.nav-buttons { position: fixed; bottom: 20px; left: 20px; display: flex; flex-direction: column; gap: 6; opacity: 1; transition: opacity .15s ease;}
+.nav-buttons { position: fixed; bottom: 20px; left: 20px; display: flex; flex-direction: column; gap: 6; transition: opacity .15s ease;}
 .nav-buttons.hidden { opacity: 0; pointer-events: none;}
+.nav-btn { height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer;}
+.btn-icon { width: 30px; height: 30px; filter: invert(1); }
 
-.nav-btn { width: px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer; user-select: none;}
-
-.btn-icon { width: 30px; height: 30px; filter: invert(1); pointer-events: none;}
-
-/* COMMENTS BUTTON */
 #comments_title {
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  margin: 40px auto 20px;
-  padding: 12px;
-  width: 220px;
-  background: #272727;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background .2s ease;
+  color: white; font-size: 18px; text-align: center; margin: 40px auto 20px;
+  padding: 12px; width: 220px; background: #272727; border-radius: 6px; cursor: pointer;
 }
-#comments_title:hover {
-  background: #333;
-}
+#comments_title:hover { background: #333; }
 
-/* PADLET */
-#padlet_box { 
-  padding: 10px; 
-  background: #191818; 
-  visibility: hidden; 
-  opacity: 0; 
-  transition: opacity .1s ease;
-  margin-top: 30px;   
-}
-  
-#chapter_reactions {
-  margin: 40px auto;
-  text-align: center;
-}
+#padlet_box { padding: 10px; background: #191818; visibility: hidden; opacity: 0; transition: opacity .1s ease; margin-top: 30px;}
 
-.reactions-row {
-  display: flex;
-  justify-content: center;
-  gap: 7px;
-}
+#chapter_reactions { margin: 40px auto; text-align: center;}
+.reactions-row { display: flex; justify-content: center; gap: 7px;}
+.reaction-item { display: flex; flex-direction: column; align-items: center; color: white; font-size: 14px;}
+.reaction-btn { max-width: 85px; max-height: 100px; cursor: pointer; transition: transform .15s ease, opacity .2s ease;}
+.reaction-btn:hover { filter: brightness(0.8);}
+.reaction-btn.clicked { opacity: 0.4; cursor: default;}
 
-.reaction-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  font-size: 14px;
-}
-
-.reaction-btn {
-  max-width: 85px;
-  max-height: 100px;
-  width: auto;
-  height: auto;
-  cursor: pointer;
-  transition: transform .15s ease, opacity .2s ease;
-}
-
-.reaction-btn:hover {
-  filter: brightness(0.8);
-}
-
-.reaction-btn.clicked {
-  opacity: 0.4;
-  cursor: default;
-  transform: none;
-}
-
-  /* TELEFONY — zmniejszone guziki reakcji */
 @media (max-width: 600px) {
-  .reaction-btn {
-    max-width: 80px;
-    max-height: 80px;
-  }
-
-  .reactions-row {
-    gap: 7px;
-  }
-
-  .reaction-count {
-    font-size: 12px;
-  }
+  .reaction-btn { max-width: 80px; max-height: 80px; }
+  .reaction-count { font-size: 12px; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER PNG -->
-<div id="series-header" style=" position: fixed; top: 7px; left: 50%; transform: translateX(-50%); z-index: 9999; opacity: 1; transition: opacity .15s ease;">
-  <a id="series-link" href="#"><img id="series-img" src="" style="max-height:23px; width:auto;"></a>
+<div id="series-header" style="position: fixed; top: 7px; left: 50%; transform: translateX(-50%); z-index: 9999; transition: opacity .15s ease;">
+  <a id="series-link" href="#"><img id="series-img" src="" style="max-height:23px;"></a>
 </div>
 
 <div id="comic-container"></div>
 <p id="chapter_loading" style="margin-top:88px; color:white; text-align:center;">Ładuję rozdział...</p>
 
-<!-- BUTTONS -->
 <div class="nav-buttons" id="nav">
   <div class="nav-btn" id="nextBtn"><img src="https://tajnachalupka.github.io/main/szczala-next.png" class="btn-icon"></div>
   <div class="nav-btn" id="prevBtn"><img src="https://tajnachalupka.github.io/main/szczala-prev.png" class="btn-icon"></div>
@@ -125,37 +57,11 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
 <div id="chapter_reactions">
   <div class="reactions-row">
-
-    <div class="reaction-item">
-      <img class="reaction-btn" data-reaction="0" src="https://tajnachalupka.github.io/main/guziki-reakcji/r1.jpg">
-      <div class="reaction-count">0</div>
-    </div>
-
-    <div class="reaction-item">
-      <img class="reaction-btn" data-reaction="1" src="https://tajnachalupka.github.io/main/guziki-reakcji/r2.jpg">
-      <div class="reaction-count">0</div>
-    </div>
-
-    <div class="reaction-item">
-      <img class="reaction-btn" data-reaction="2" src="https://tajnachalupka.github.io/main/guziki-reakcji/r3.jpg">
-      <div class="reaction-count">0</div>
-    </div>
-
-    <div class="reaction-item">
-      <img class="reaction-btn" data-reaction="3" src="https://tajnachalupka.github.io/main/guziki-reakcji/r4.jpg">
-      <div class="reaction-count">0</div>
-    </div>
-
-    <div class="reaction-item">
-      <img class="reaction-btn" data-reaction="4" src="https://tajnachalupka.github.io/main/guziki-reakcji/r5.jpg">
-      <div class="reaction-count">0</div>
-    </div>
-
-    <div class="reaction-item" style="display:none;">
-      <img class="reaction-btn" data-reaction="5" src="LINK6">
-      <div class="reaction-count">0</div>
-    </div>
-
+    <div class="reaction-item"><img class="reaction-btn" data-reaction="0" src="https://tajnachalupka.github.io/main/guziki-reakcji/r1.jpg"><div class="reaction-count">0</div></div>
+    <div class="reaction-item"><img class="reaction-btn" data-reaction="1" src="https://tajnachalupka.github.io/main/guziki-reakcji/r2.jpg"><div class="reaction-count">0</div></div>
+    <div class="reaction-item"><img class="reaction-btn" data-reaction="2" src="https://tajnachalupka.github.io/main/guziki-reakcji/r3.jpg"><div class="reaction-count">0</div></div>
+    <div class="reaction-item"><img class="reaction-btn" data-reaction="3" src="https://tajnachalupka.github.io/main/guziki-reakcji/r4.jpg"><div class="reaction-count">0</div></div>
+    <div class="reaction-item"><img class="reaction-btn" data-reaction="4" src="https://tajnachalupka.github.io/main/guziki-reakcji/r5.jpg"><div class="reaction-count">0</div></div>
   </div>
 </div>
 
@@ -164,93 +70,68 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
 <script>
 (async function () {
-
   const qs = new URLSearchParams(location.search);
   const comicKey = qs.get("comic");
   const chapter = qs.get("chapter");
   const container = document.getElementById("comic-container");
-
   const nextBtn = document.getElementById("nextBtn");
   const prevBtn = document.getElementById("prevBtn");
   const homeBtn = document.getElementById("homeBtn");
 
   if (!comicKey || !chapter) {
-    container.innerHTML = "<p style='color:white;text-align:center;padding:50px;'>Brak parametru comic lub chapter.</p>";
+    container.innerHTML = "<p style='color:white;text-align:center;padding:50px;'>Brak parametru.</p>";
     return;
   }
 
-  nextBtn.onclick = () => {};
-  prevBtn.onclick = () => {};
   homeBtn.onclick = () => location.href = "https://tajnachalupka.wixsite.com/tlumaczenia";
 
-  /* DETEKCJA URZĄDZEŃ */
   const USE_SLICER = (() => {
     const ua = navigator.userAgent || "";
     if (/Android [0-8]\./i.test(ua)) return false;
-
     const t0 = performance.now();
     for (let i = 0; i < 40000; i++) {}
     if (performance.now() - t0 > 10) return false;
-
-    try { return !!document.createElement("canvas").getContext("2d"); }
-    catch { return false; }
+    try { return !!document.createElement("canvas").getContext("2d"); } catch { return false; }
   })();
 
-  /* SLICER */
-  async function sliceImage(src, sliceHeight = 800) {   // ★ zmiana 2000 → 800
+  async function sliceImage(src, sliceHeight = 800) {
     return new Promise((resolve, reject) => {
       const img = new Image();
       img.crossOrigin = "anonymous";
+      img.dataset.retry = "0";
       img.src = src;
 
       img.onload = () => {
-        try {
-          if (!USE_SLICER) {
-            resolve([src]);
-            return;
-          }
-
-          const slices = [];
-          const canvas = document.createElement("canvas");
-          const ctx = canvas.getContext("2d");
-
-          for (let y = 0; y < img.height; y += sliceHeight) {
-            const h = Math.min(sliceHeight, img.height - y);
-
-            canvas.width = img.width;
-            canvas.height = h;
-
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            ctx.drawImage(
-              img,
-              0, y, img.width, h,
-              0, 0, img.width, h
-            );
-
-            slices.push(canvas.toDataURL("image/jpeg", 0.95));
-          }
-
-          resolve(slices);
-        } catch (e) {
-          reject(e);
+        if (!USE_SLICER) {
+          resolve([src]);
+          return;
         }
+        const slices = [];
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+        for (let y = 0; y < img.height; y += sliceHeight) {
+          const h = Math.min(sliceHeight, img.height - y);
+          canvas.width = img.width;
+          canvas.height = h;
+          ctx.drawImage(img, 0, y, img.width, h, 0, 0, img.width, h);
+          slices.push(canvas.toDataURL("image/jpeg", 0.95));
+        }
+        resolve(slices);
       };
 
       img.onerror = () => {
-        // ★ retry — bezpieczny, lekki
-        setTimeout(() => {
+        let tries = +img.dataset.retry;
+        if (tries < 3) {
+          img.dataset.retry = tries + 1;
           img.src = src + "?retry=" + Math.random();
-        }, 200);
+        } else reject();
       };
     });
   }
 
-  /* JSON */
   let data;
   try {
-    const res = await fetch(`${comicKey}.json`);
-    data = await res.json();
+    data = await (await fetch(`${comicKey}.json`)).json();
     if (data.series_icon) document.getElementById("series-img").src = data.series_icon;
     document.getElementById("series-link").href = `series.html?comic=${comicKey}`;
   } catch {
@@ -260,47 +141,63 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
   const pages = data.chapters[chapter];
   if (!pages) {
-    container.innerHTML = "<p style='color:white;text-align:center;padding:50px;'>Ten rozdział nie istnieje.</p>";
+    container.innerHTML = "<p style='color:white;text-align:center;padding:50px;'>Rozdział nie istnieje.</p>";
     return;
   }
 
   localStorage.setItem(`read_${comicKey}_${chapter}`, "1");
-
   const loadingInfo = document.getElementById("chapter_loading");
 
-  /* Wstawianie obrazów */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const img = e.target;
+        img.src = img.dataset.src;
+        observer.unobserve(img);
+      }
+    });
+  }, { rootMargin: "0px 0px 300px 0px" });
+
+  const placeholder = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
   for (const src of pages) {
     await new Promise(r => setTimeout(r, 0));
-
     try {
-      const slices = await sliceImage(src, 800);   // ★ zmiana 2000 → 800
-
+      const slices = await sliceImage(src, 800);
       slices.forEach(url => {
         const img = document.createElement("img");
         img.className = "comic-page";
-        img.src = url;
-        img.loading = "lazy";
+        img.dataset.src = url;
+        img.dataset.retry = "0";
+
+        if (USE_SLICER) {
+          img.src = placeholder;
+          observer.observe(img);
+        } else {
+          img.src = url;
+        }
+
+        img.onerror = () => {
+          let tries = +img.dataset.retry;
+          if (tries < 3) {
+            img.dataset.retry = tries + 1;
+            img.src = img.dataset.src + "?r=" + Date.now();
+          }
+        };
+
         container.appendChild(img);
       });
-
     } catch {
       container.innerHTML += "<p style='color:red;text-align:center;'>Błąd obrazu.</p>";
     }
   }
 
-  if (loadingInfo) loadingInfo.remove();
+  loadingInfo?.remove();
 
-  /* Sortowanie */
   const keys = Object.keys(data.chapters).sort((a, b) => {
-    const na = parseInt(a);
-    const nb = parseInt(b);
-    const ha = !isNaN(na);
-    const hb = !isNaN(nb);
-
-    if (ha && hb) {
-      if (na !== nb) return na - nb;
-      return a.localeCompare(b);
-    }
+    const na = +a, nb = +b;
+    const ha = !isNaN(na), hb = !isNaN(nb);
+    if (ha && hb) return na - nb || a.localeCompare(b);
     if (ha) return -1;
     if (hb) return 1;
     return a.localeCompare(b);
@@ -309,30 +206,21 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   const index = keys.indexOf(chapter);
 
   nextBtn.onclick = () => {
-    if (index !== -1 && index < keys.length - 1) {
-      location.href = `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(keys[index + 1])}`;
-    } else {
-      location.href = "https://tajnachalupka.wixsite.com/tlumaczenia";
-    }
+    location.href = index < keys.length - 1
+      ? `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(keys[index + 1])}`
+      : "https://tajnachalupka.wixsite.com/tlumaczenia";
   };
 
   prevBtn.onclick = () => {
-    if (index > 0) {
-      location.href = `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(keys[index - 1])}`;
-    } else {
-      location.href = "https://tajnachalupka.wixsite.com/tlumaczenia";
-    }
+    location.href = index > 0
+      ? `reader.html?comic=${comicKey}&chapter=${encodeURIComponent(keys[index - 1])}`
+      : "https://tajnachalupka.wixsite.com/tlumaczenia";
   };
 
-  /* PADLET — tylko po kliknięciu */
   let padletLoaded = false;
-
-const loadPadlet = () => {
+  document.getElementById("comments_title").onclick = () => {
     if (padletLoaded) return;
     padletLoaded = true;
-
-    const btn = document.getElementById("comments_title");
-    btn.style.display = "none";
 
     const box = document.getElementById("padlet_box");
     const embed = data.padlet;
@@ -350,56 +238,31 @@ const loadPadlet = () => {
       </div>
     `;
 
+    document.getElementById("comments_title").style.display = "none";
     box.style.visibility = "visible";
     box.style.opacity = "1";
-};
-
-
-  document.getElementById("comments_title").onclick = loadPadlet;
-
+  };
 })();
+</script>
 
-/* AUTO-HIDE */
+<script>
 let lastScroll = 0;
 const nav = document.getElementById("nav");
 const header = document.getElementById("series-header");
 
 window.addEventListener("scroll", () => {
-  const current = window.scrollY;
-  if (current > lastScroll) {
+  const y = window.scrollY;
+  if (y > lastScroll) {
     nav.classList.add("hidden");
     header.style.opacity = "0";
   } else {
     nav.classList.remove("hidden");
     header.style.opacity = "1";
   }
-  lastScroll = current;
+  lastScroll = y;
 });
-
-  document.addEventListener("DOMContentLoaded", () => {
-  const imgs = document.querySelectorAll("img");
-
-  imgs.forEach(img => {
-    img.dataset.retry = "0";
-
-    img.addEventListener("error", () => {
-      const tries = parseInt(img.dataset.retry, 10);
-
-      if (tries < 3) {
-        img.dataset.retry = tries + 1;
-        const src = img.src;
-
-        setTimeout(() => {
-          img.src = src + (src.includes("?") ? "&" : "?") + "r=" + Date.now();
-        }, 300);
-      }
-    });
-  });
-});
-
-  
 </script>
-  
+
 <script type="module" src="reactions.js"></script>
 
 </body>
