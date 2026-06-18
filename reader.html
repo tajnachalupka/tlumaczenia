@@ -88,7 +88,6 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   transform: none;
 }
 
-  /* TELEFONY — zmniejszone guziki reakcji */
 @media (max-width: 600px) {
   .reaction-btn {
     max-width: 80px;
@@ -103,8 +102,6 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
     font-size: 12px;
   }
 }
-
-
 </style>
 </head>
 
@@ -128,44 +125,35 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 <div id="chapter_reactions">
   <div class="reactions-row">
 
-    <!-- Reakcja 1 -->
     <div class="reaction-item">
       <img class="reaction-btn" data-reaction="0" src="https://tajnachalupka.github.io/main/guziki-reakcji/r1.jpg">
       <div class="reaction-count">0</div>
     </div>
 
-    <!-- Reakcja 2 -->
     <div class="reaction-item">
       <img class="reaction-btn" data-reaction="1" src="https://tajnachalupka.github.io/main/guziki-reakcji/r2.jpg">
       <div class="reaction-count">0</div>
     </div>
 
-    <!-- Reakcja 3 -->
     <div class="reaction-item">
       <img class="reaction-btn" data-reaction="2" src="https://tajnachalupka.github.io/main/guziki-reakcji/r3.jpg">
       <div class="reaction-count">0</div>
     </div>
 
-    <!-- Reakcja 4 -->
     <div class="reaction-item">
       <img class="reaction-btn" data-reaction="3" src="https://tajnachalupka.github.io/main/guziki-reakcji/r4.jpg">
       <div class="reaction-count">0</div>
     </div>
 
-    <!-- Reakcja 5 -->
     <div class="reaction-item">
       <img class="reaction-btn" data-reaction="4" src="https://tajnachalupka.github.io/main/guziki-reakcji/r5.jpg">
       <div class="reaction-count">0</div>
     </div>
 
-    <!-- Reakcja 6 (ukryta) -->
     <div class="reaction-item" style="display:none;">
       <img class="reaction-btn" data-reaction="5" src="LINK6">
       <div class="reaction-count">0</div>
     </div>
-
-  </div>
-</div>
 
   </div>
 </div>
@@ -208,7 +196,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   })();
 
   /* SLICER */
-  async function sliceImage(src, sliceHeight = 2000) {
+  async function sliceImage(src, sliceHeight = 800) {   // ★ POPRAWKA: zmniejszony sliceHeight
     return new Promise((resolve, reject) => {
       const img = new Image();
       img.crossOrigin = "anonymous";
@@ -248,7 +236,12 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
         }
       };
 
-      img.onerror = () => reject();
+      img.onerror = () => {
+        // ★ POPRAWKA: retry przy błędzie
+        setTimeout(() => {
+          img.src = src + "?retry=" + Math.random();
+        }, 200);
+      };
     });
   }
 
@@ -279,12 +272,16 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
     await new Promise(r => setTimeout(r, 0));
 
     try {
-      const slices = await sliceImage(src, 2000);
+      const slices = await sliceImage(src, 800);   // ★ POPRAWKA: mniejszy sliceHeight
+
       slices.forEach(url => {
         const img = document.createElement("img");
         img.className = "comic-page";
         img.src = url;
-        img.loading = "lazy";
+
+        // ★ POPRAWKA: wyłączamy lazy-loading dla pociętych obrazów
+        if (!USE_SLICER) img.loading = "lazy";
+
         container.appendChild(img);
       });
     } catch {
@@ -331,15 +328,13 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
   /* PADLET — tylko po kliknięciu */
   let padletLoaded = false;
 
-const loadPadlet = () => {
+  const loadPadlet = () => {
     if (padletLoaded) return;
     padletLoaded = true;
 
-    // ⭐ ukryj przycisk
     const btn = document.getElementById("comments_title");
     btn.style.display = "none";
 
-    // ⭐ wstaw komentarze dokładnie w to miejsce
     const box = document.getElementById("padlet_box");
     const embed = data.padlet;
     const full = embed.replace("/embed/", "/");
@@ -348,7 +343,8 @@ const loadPadlet = () => {
       <div style="border:1px solid #0001; border-radius:2px; overflow:hidden; max-width:580px; margin:0 auto;">
         <iframe src="${embed}" frameborder="0" style="width:100%;height:600px;"></iframe>
         <p style="text-align:center; margin-top:14px;">
-          <a href="${full}" target="_blank"
+          <a href="${full}"
+ target="_blank"
              style="padding:10px 18px; background:#272727; color:white; font-size:14px; border-radius:3px; text-decoration:none;">
             Otwórz padlet
           </a>
@@ -358,8 +354,7 @@ const loadPadlet = () => {
 
     box.style.visibility = "visible";
     box.style.opacity = "1";
-};
-
+  };
 
   document.getElementById("comments_title").onclick = loadPadlet;
 
@@ -382,7 +377,7 @@ window.addEventListener("scroll", () => {
   lastScroll = current;
 });
 </script>
-  
+
 <script type="module" src="reactions.js"></script>
 
 </body>
