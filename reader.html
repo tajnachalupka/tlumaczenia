@@ -229,7 +229,7 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
 
   const loadingInfo = document.getElementById("chapter_loading");
 
-  /* Wstawianie obrazów + PROSTY PRELOADING */
+  /* Wstawianie obrazów + PRELOADING + POPRAWKA LAZY-LOADING */
   for (let i = 0; i < pages.length; i++) {
     const src = pages[i];
 
@@ -247,10 +247,10 @@ img.comic-page { width: 100%; height: auto; display: block; max-width: 720px; im
       slices.forEach(url => {
         const img = document.createElement("img");
         img.className = "comic-page";
+
+        img.loading = "lazy";   // ★ JEDYNA ZMIANA — zawsze lazy, jak w starym readerze
+
         img.src = url;
-
-        if (!USE_SLICER) img.loading = "lazy";
-
         container.appendChild(img);
       });
 
