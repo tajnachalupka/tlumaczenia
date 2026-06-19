@@ -256,15 +256,15 @@ body{
   // ZAPIS PRZECZYTANIA
   localStorage.setItem(`read_${comicKey}_${chapter}`, "1");
 
-  // B+ PREFETCH 1
-  let index = 0;
+  // PREFETCH
   let prefetchImg = null;
 
+  /* ⭐ DZIAŁAJĄCA FUNKCJA DLA TELEFONÓW ⭐ */
   function loadImage(i){
     return new Promise(resolve => {
+
       const img = document.createElement("img");
       img.className = "comic-page";
-      img.src = pages[i];
 
       img.onload = () => {
         img.classList.add("loaded");
@@ -274,23 +274,20 @@ body{
       img.onerror = () => {
         img.src = pages[i] + "?r=" + Date.now();
       };
+
+      container.appendChild(img);
+      img.src = pages[i];
     });
   }
 
   async function loadSequence(){
-    // 1) Ładujemy pierwszy obraz
     const first = await loadImage(0);
-    container.appendChild(first);
-
-    // usuwamy napis dopiero teraz
     document.getElementById("chapter_loading")?.remove();
 
-    // 2) Prefetch obrazu nr 2
     if(pages[1]){
       prefetchImg = loadImage(1);
     }
 
-    // 3) Ładujemy resztę
     for(let i=1;i<pages.length;i++){
       let img;
 
@@ -301,9 +298,6 @@ body{
         img = await loadImage(i);
       }
 
-      container.appendChild(img);
-
-      // prefetch kolejnego
       if(pages[i+1]){
         prefetchImg = loadImage(i+1);
       }
@@ -312,7 +306,7 @@ body{
 
   loadSequence();
 
-  // NAWIGACJA MIĘDZY ROZDZIAŁAMI
+  // NAWIGACJA
   const keys = Object.keys(data.chapters).sort((a,b)=>{
     const na = +a, nb = +b;
     const ha = !isNaN(na), hb = !isNaN(nb);
@@ -393,13 +387,30 @@ window.addEventListener("scroll", () => {
 });
 </script>
 
-  <script>
+<!-- STRZAŁKI -->
+<script>
 document.addEventListener("keydown", e => {
   if (e.key === "ArrowRight") {
     document.getElementById("nextBtn").click();
   }
   if (e.key === "ArrowLeft") {
     document.getElementById("prevBtn").click();
+  }
+});
+</script>
+
+<!-- AUTO SCROLL -->
+<script>
+document.addEventListener("click", e => {
+  const h = window.innerHeight;
+  const y = e.clientY;
+
+  if (e.target.closest(".nav-buttons") || e.target.closest("#series-header")) return;
+
+  if (y > h * 0.55) {
+    window.scrollBy({ top: h * 0.85, behavior: "smooth" });
+  } else if (y < h * 0.45) {
+    window.scrollBy({ top: -h * 0.85, behavior: "smooth" });
   }
 });
 </script>
