@@ -24,7 +24,7 @@ const counts = document.querySelectorAll(".reaction-count");
 // ŁADOWANIE LICZNIKÓW
 // ------------------------------
 async function loadCounts() {
-  const { data, error } = await supabase
+  const { data } = await supabase
     .from("reactions")
     .select("*")
     .eq("id", reactionId)
@@ -74,6 +74,22 @@ async function sendReaction(index, btn) {
   localStorage.setItem(`${localKey}_${index}`, "1");
   btn.classList.add("clicked");
   btn.style.opacity = ".4";
+
+/* ⭐ CHECKMARK POP ANIMACJA ⭐ */
+const check = document.createElement("div");
+check.className = "reaction-check";
+check.textContent = "✓";
+
+/* pozycjonowanie na środku obrazka */
+const rect = btn.getBoundingClientRect();
+check.style.left = rect.width / 2 - 12 + "px";
+check.style.top = rect.height / 2 - 20 + "px";
+
+btn.parentElement.style.position = "relative";
+btn.parentElement.appendChild(check);
+
+setTimeout(() => check.remove(), 450);
+
 
   loadCounts();
 }
