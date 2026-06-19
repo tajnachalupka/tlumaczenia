@@ -405,12 +405,14 @@ document.addEventListener("click", e => {
   const h = window.innerHeight;
   const y = e.clientY;
 
-  if (e.target.closest(".nav-buttons") || e.target.closest("#series-header")) return;
+  // Scroll działa TYLKO jeśli kliknięto na obraz komiksu
+  if (!e.target.classList.contains("comic-page")) {
+    return;
+  }
 
+  // Scroll TYLKO w dół
   if (y > h * 0.55) {
-    window.scrollBy({ top: h * 0.85, behavior: "smooth" });
-  } else if (y < h * 0.45) {
-    window.scrollBy({ top: -h * 0.85, behavior: "smooth" });
+    window.scrollBy({ top: h * 0.9 });
   }
 });
 </script>
