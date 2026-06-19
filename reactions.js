@@ -1,7 +1,7 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const SUPABASE_URL = "https://wjspjyqqsepcxnmjbxbp.supabase.co";
-const SUPABASE_KEY = "sb_publishable_snjwsTMDLiTgtwTlI_CD7w_8y5z1Q6_";
+const SUPABASE_URL = "https://ksoqkpzjdjoglnfflfui.supabase.co";
+const SUPABASE_KEY = "sb_publishable_4d_svQaLP_NzQ3KV3Qy20Q_KQzwuL_C";
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -23,7 +23,7 @@ const counts = document.querySelectorAll(".reaction-count");
 // ŁADOWANIE LICZNIKÓW
 // ------------------------------
 async function loadCounts() {
-  const { data, error } = await supabase
+  const { data } = await supabase
     .from("reactions")
     .select("*")
     .eq("id", reactionId)
@@ -31,13 +31,12 @@ async function loadCounts() {
 
   const arr = data?.counts || [0,0,0,0,0,0];
 
-  // Ustaw liczniki
   counts.forEach((c, i) => c.textContent = arr[i]);
 
-  // Zamroź tylko te guziki, które były kliknięte
   buttons.forEach((btn, i) => {
     if (localStorage.getItem(`${localKey}_${i}`)) {
       btn.classList.add("clicked");
+      btn.style.opacity = ".4";
     }
   });
 }
@@ -48,7 +47,6 @@ async function loadCounts() {
 // ------------------------------
 async function sendReaction(index, btn) {
 
-  // Blokada per guzik
   if (localStorage.getItem(`${localKey}_${index}`)) return;
 
   let { data, error } = await supabase
@@ -57,7 +55,6 @@ async function sendReaction(index, btn) {
     .eq("id", reactionId)
     .single();
 
-  // Jeśli brak rekordu → tworzymy
   let arr = data?.counts ? [...data.counts] : [0,0,0,0,0,0];
   arr[index]++;
 
@@ -73,22 +70,88 @@ async function sendReaction(index, btn) {
       .eq("id", reactionId);
   }
 
-  // Zamrożenie tylko tego jednego guzika
   localStorage.setItem(`${localKey}_${index}`, "1");
   btn.classList.add("clicked");
+  btn.style.opacity = ".4";
 
   loadCounts();
 }
 
 
 // ------------------------------
-// OBSŁUGA KLIKNIĘĆ
+// PODWÓJNE KLIKNIĘCIE + „POTWIERDŹ” + ANULACJA
 // ------------------------------
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const index = parseInt(btn.dataset.reaction);
-    sendReaction(index, btn);
+let pending = null;
+let timeoutId = null;
+let confirmMode = false;
+
+function cancelPending() {
+  pending = null;
+  confirmMode = false;
+  clearTimeout(timeoutId);
+
+  document.querySelectorAll(".confirm-label").forEach(el => el.remove());
+
+  buttons.forEach(b => {
+    if (!b.classList.contains("clicked")) {
+      b.style.opacity = "1";
+    }
   });
+}
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", e => {
+    e.stopPropagation();
+
+    const index = parseInt(btn.dataset.reaction);
+
+    if (btn.classList.contains("clicked")) return;
+
+    // ⭐ DRUGIE KLIKNIĘCIE = POTWIERDZENIE
+    if (confirmMode && pending === index) {
+
+      // natychmiast blokujemy wizualnie
+      btn.classList.add("clicked");
+      btn.style.opacity = ".4";
+
+      cancelPending();
+      sendReaction(index, btn);
+      return;
+    }
+
+    // ⭐ PIERWSZE KLIKNIĘCIE
+    pending = index;
+    confirmMode = true;
+
+    document.querySelectorAll(".confirm-label").forEach(el => el.remove());
+
+    buttons.forEach(b => {
+      if (b !== btn && !b.classList.contains("clicked")) {
+        b.style.opacity = "0.3";
+      }
+    });
+
+    btn.style.opacity = "1";
+
+    const label = document.createElement("div");
+    label.className = "confirm-label";
+    label.textContent = "potwierdź";
+    label.style.color = "white";
+    label.style.fontSize = "12px";
+    label.style.marginTop = "4px";
+    label.style.opacity = "0.8";
+    btn.parentElement.appendChild(label);
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(cancelPending, 5000);
+  });
+});
+
+// ⭐ ANULACJA KLIKNIĘCIEM POZA
+document.addEventListener("click", e => {
+  if (!e.target.closest(".reaction-btn")) {
+    cancelPending();
+  }
 });
 
 
