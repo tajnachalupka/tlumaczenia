@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="icon" type="image/png" href="https://tajnachalupka.github.io/main/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tajna chałupka</title>
+
+<style>
+@font-face { font-family: "figtree"; src: url("https://tajnachalupka.github.io/main/Figtree.ttf"); }
+@font-face { font-family: "satoshi"; src: url("https://tajnachalupka.github.io/main/Satoshi.otf"); font-weight: 300; }
+
+body { margin:0; background:#191818; color:white; font-family: figtree, sans-serif;}
+
+.hero { display:flex; justify-content:center; padding:15px 0; }
+.hero img { width:160px; }
+
+.section-block { width:min(100%,1000px); margin:0 auto; padding:0 9px; box-sizing:border-box;}
+
+.section-title-img { display:block; width:100%; max-width:200px; margin:35px 0 20px 0;}
+
+.auto-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:9px; justify-items:center; width:fit-content; margin:0 auto;}
+
+.card { text-decoration:none; color:white; text-align:center; }
+.card img { transition: filter .25s ease;}
+.card:hover img { transform: none; filter: brightness(0.8);}
+
+.card.square img { width:100%; max-width:150px; border-radius:2px; aspect-ratio:1/1; object-fit:cover;}
+.card.tall img { width:100%; max-width:150px; aspect-ratio:5/9; object-fit:cover;}
+
+@media(max-width:600px){
+  .auto-grid { grid-template-columns:repeat(3,1fr); gap:9px; margin-bottom:9px; }
+  .section-title-img { width:58%; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <img src="https://tajnachalupka.github.io/main/logo.png" alt="">
+</header>
+
+<!-- WSZYSTKIE SERIE -->
+<div class="section-block">
+  <img class="section-title-img" src="https://tajnachalupka.github.io/main/wszystkie.png">
+
+  <div id="titles-grid-1" class="auto-grid">
+
+    <a class="card tall" href="series.html?comic=afos">
+      <img src="https://tajnachalupka.github.io/main/cov/!afos.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=at">
+      <img src="https://tajnachalupka.github.io/main/cov/!at.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=bn">
+      <img src="https://tajnachalupka.github.io/main/cov/!bn.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=mp">
+      <img src="https://tajnachalupka.github.io/main/cov/!mp.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=mo">
+      <img src="https://tajnachalupka.github.io/main/cov/!mo.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=mnbig">
+      <img src="https://tajnachalupka.github.io/main/cov/!mnbig.jpg">
+    </a>
+
+  </div>
+
+  <div id="titles-grid-2" class="auto-grid">
+
+    <a class="card tall" href="series.html?comic=1rta">
+      <img src="https://tajnachalupka.github.io/main/cov/!orta.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=osd">
+      <img src="https://tajnachalupka.github.io/main/cov/!osd.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=rc">
+      <img src="https://tajnachalupka.github.io/main/cov/!rc.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=sah">
+      <img src="https://tajnachalupka.github.io/main/cov/!sah.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=ub">
+      <img src="https://tajnachalupka.github.io/main/cov/!ub.jpg">
+    </a>
+
+    <a class="card tall" href="series.html?comic=yiam">
+      <img src="https://tajnachalupka.github.io/main/cov/!yiam.jpg">
+    </a>
+
+  </div>
+</div>
+
+<!-- OZNACZENIE 18+ -->
+<div style="text-align:center; margin:40px 0;">
+  <img src="https://tajnachalupka.github.io/main/info-i-18.png"
+       style="max-width:470px; width:100%; height:auto;">
+</div>
+
+<script>
+document.querySelectorAll("a.card").forEach(card => {
+  const url = new URL(card.href, location.href);
+  const comic = url.searchParams.get("comic");
+  const chapter = url.searchParams.get("chapter");
+
+  if (comic && chapter) {
+    const key = `read_${comic}_${chapter}`;
+    if (localStorage.getItem(key)) card.classList.add("read");
+  }
+});
+</script>
+
+</body>
+</html>
