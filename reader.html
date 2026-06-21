@@ -145,9 +145,9 @@ body{
 }
 .reaction-check {
   position: absolute;
-  font-size: 34px; /* większy */
+  font-size: 34px;
   font-weight: 700;
-  color: white; /* Twój kolor */
+  color: white;
   opacity: 0;
   transform: scale(0.4);
   animation: checkPop 0.45s ease-out forwards;
@@ -155,21 +155,10 @@ body{
 }
 
 @keyframes checkPop {
-  0% {
-    opacity: 0;
-    transform: scale(0.4);
-  }
-  40% {
-    opacity: 1;
-    transform: scale(1.25); /* POP */
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
+  0% { opacity: 0; transform: scale(0.4); }
+  40% { opacity: 1; transform: scale(1.25); }
+  100% { opacity: 0; transform: scale(1); }
 }
-
-
 </style>
 </head>
 
@@ -242,6 +231,7 @@ body{
   const qs = new URLSearchParams(location.search);
   const comicKey = qs.get("comic");
   const chapter = qs.get("chapter");
+  const chapterDecoded = decodeURIComponent(chapter);
   const container = document.getElementById("comic-container");
 
   if(!comicKey || !chapter){
@@ -255,16 +245,17 @@ body{
     location.href = "https://tajnachalupka.wixsite.com/tlumaczenia";
   };
 
-  // JSON
-  let data;
+  // JSON — pobieramy jako tekst, aby zachować kolejność kluczy
+  let rawJson;
   try{
-    const res = await fetch(`${comicKey}.json`);
-    data = await res.json();
+    rawJson = await fetch(`${comicKey}.json`).then(r => r.text());
   }catch(e){
     container.innerHTML =
       "<p style='color:white;text-align:center;padding:50px;'>Błąd JSON.</p>";
     return;
   }
+
+  const data = JSON.parse(rawJson);
 
   // HEADER SERII
   if(data.series_icon){
@@ -273,20 +264,19 @@ body{
       `series.html?comic=${comicKey}`;
   }
 
-  const pages = data.chapters[chapter];
+  const pages = data.chapters[chapterDecoded];
   if(!pages){
     container.innerHTML =
       "<p style='color:white;text-align:center;padding:50px;'>Rozdział nie istnieje.</p>";
     return;
   }
 
-  // ZAPIS PRZECZYTANIA
-  localStorage.setItem(`read_${comicKey}_${chapter}`, "1");
+  // ZAPIS PRZECZYTANIA — poprawiony
+  localStorage.setItem(`read_${comicKey}_${chapterDecoded}`, "1");
 
   // PREFETCH
   let prefetchImg = null;
 
-  /* ⭐ DZIAŁAJĄCA FUNKCJA DLA TELEFONÓW ⭐ */
   function loadImage(i){
     return new Promise(resolve => {
 
@@ -333,17 +323,15 @@ body{
 
   loadSequence();
 
-  // NAWIGACJA
-  const keys = Object.keys(data.chapters).sort((a,b)=>{
-    const na = +a, nb = +b;
-    const ha = !isNaN(na), hb = !isNaN(nb);
-    if(ha && hb) return na - nb || a.localeCompare(b);
-    if(ha) return -1;
-    if(hb) return 1;
-    return a.localeCompare(b);
+  // ⭐ WYCIĄGAMY KOLEJNOŚĆ ROZDZIAŁÓW Z SUROWEGO JSON ⭐
+  const keys = [];
+  rawJson.replace(/"chapters"\s*:\s*{([\s\S]*?)}/, (match, inner) => {
+    inner.replace(/"([^"]+)"\s*:/g, (_, key) => {
+      keys.push(key);
+    });
   });
 
-  const idx = keys.indexOf(chapter);
+  const idx = keys.indexOf(chapterDecoded);
 
   document.getElementById("nextBtn").onclick = () => {
     if(idx < keys.length - 1){
@@ -432,12 +420,10 @@ document.addEventListener("click", e => {
   const h = window.innerHeight;
   const y = e.clientY;
 
-  // Scroll działa TYLKO jeśli kliknięto na obraz komiksu
   if (!e.target.classList.contains("comic-page")) {
     return;
   }
 
-  // Scroll TYLKO w dół
   if (y > h * 0.25) {
     window.scrollBy({ top: h * 0.9 });
   }
