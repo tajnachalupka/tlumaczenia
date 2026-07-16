@@ -6,8 +6,9 @@
   "cover": "https://tajnachalupka.github.io/main/covers/yiam.png",
   "desc": "Jang Baekhee odlicza dni do momentu, kiedy wreszcie ucieknie z Gicheon, zanim jego ojciec wyjdzie z więzienia. Pewnego dnia, niedługo przed ukończeniem szkoły, spotyka Yang Ilwoo, który właśnie przeniósł się z Seulu.<br><br>'Czy podobni ludzie naprawdę się rozpoznają? Coś w nim nie dawało mi spokoju. Nie mogłem po prostu patrzeć z boku.'",
   "seasons": {
-  "Część 1. Jang Baekhee": { "from": "1", "to": "∞" }
-},
+  "Część 1. Jang Baekhee": { "from": "1", "to": "18" }
+  "Część 2. Yang Ilwoo": { "from": "19", "to": "∞" }
+  },
 "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvvv/yang-ilwoo-and-me-7r525d9si7ca6l7c",
   "disqus_base": "yiam",
   "chapters": {
@@ -153,6 +154,14 @@
       "https://tajnachalupka.github.io/yiam/17/3.jpg",
       "https://tajnachalupka.github.io/yiam/17/4.jpg",
       "https://tajnachalupka.github.io/yiam/17/5.jpg",
+      "https://tajnachalupka.github.io/yiam/yiam-coins.jpg"
+    ],
+    "18": [
+      "https://tajnachalupka.github.io/yiam/18/1.jpg",
+      "https://tajnachalupka.github.io/yiam/18/2.jpg",
+      "https://tajnachalupka.github.io/yiam/18/3.jpg",
+      "https://tajnachalupka.github.io/yiam/18/4.jpg",
+      "https://tajnachalupka.github.io/yiam/18/5.jpg",
       "https://tajnachalupka.github.io/yiam/yiam-coins.jpg"
     ]
   }
