@@ -1,0 +1,33 @@
+
+{
+  "slug": "wf",
+  "title": "winterfield",
+  "header_img": "https://tajnachalupka.github.io/main/tagi/wf.png",
+  "series_icon": "https://tajnachalupka.github.io/main/guzik-gora/wf.png",
+  "cover": "https://tajnachalupka.github.io/main/covers/wf.png",
+  "desc": "Rensley Mallosen, nieślubny książę Kornii, zostaje odesłany w lodowate krainy Oldenlandt, przebrany za księżniczkę, by poślubić budzącego grozę wielkiego księcia Zvendarda. Planując ucieczkę jeszcze przed ceremonią zaślubin, milczy i ukrywa swoją twarz. Jednak gdy wielki książę odkrywa podstęp, składa całkowicie nieoczekiwaną propozycję - udawane małżeństwo, by uchronić Rensleya przed grożącym mu niebezpieczeństwem. Z czasem Rensley poznaje prawdziwie łagodną naturę wielkiego księcia i coraz trudniej mu ukrywać narastające uczucia. Czy ich udawany związek może przerodzić się w coś prawdziwego, zanim mroczne siły spróbują rozdzielić ich na zawsze?",
+  "seasons": {
+  "Rozdziały": { "from": "1", "to": "∞" }
+},
+  "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvv/moze-ognia-cx6d1o9objsqbrey",
+  "disqus_base": "wf",
+  "chapters": {
+    "1": [
+      "https://tajnachalupka.github.io/wf/01/1.jpg",
+      "https://tajnachalupka.github.io/wf/01/2.jpg",
+      "https://tajnachalupka.github.io/wf/01/3.jpg",
+      "https://tajnachalupka.github.io/wf/01/4.jpg",
+      "https://tajnachalupka.github.io/wf/01/5.jpg",
+      "https://tajnachalupka.github.io/wf/wf-coins.jpg"
+      ],
+    "2": [
+      "https://tajnachalupka.github.io/wf/02/1.jpg",
+      "https://tajnachalupka.github.io/wf/02/2.jpg",
+      "https://tajnachalupka.github.io/wf/02/3.jpg",
+      "https://tajnachalupka.github.io/wf/02/4.jpg",
+      "https://tajnachalupka.github.io/wf/02/5.jpg",
+      "https://tajnachalupka.github.io/wf/02/6.jpg",
+      "https://tajnachalupka.github.io/wf/wf-coins.jpg"
+      ]
+  }
+}
