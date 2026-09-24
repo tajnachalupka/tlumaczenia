@@ -5,6 +5,10 @@
   "series_icon": "https://tajnachalupka.github.io/main/guzik-gora/ub.png",
   "cover": "https://tajnachalupka.github.io/main/covers/ub.png",
   "desc": "'Nie odzywajcie się do mnie, szczeniaki drapieżnych bestii' - tak Yuntae, zmiennokształtny czarnej pantery, alfa i dziedzic korporacji, wita się z nową klasą. Właśnie wylądował w zapyziałym miasteczku i twierdzi, że przyjechał odnaleźć swoją pierwszą miłość. Jeongseo to przerażający zmiennokształtny, w końcu to łasica! Pewnie właśnie dlatego do tej pory nie był w stanie się z nikim zakolegować… A tak w ogóle to czemu ten nowy uczeń nie przestaje się wokół niego kręcić? O co chodzi temu bezczelowi?",
+  "seasons": {
+  "Sezon 1.": { "from": "1", "to": "36" },
+  "Sezon 2.": { "from": "37", "to": "∞" }
+},
   "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvvv/uwaga-bestia-o0plra2tzpi96h76",
   "disqus_base": "ub",
   "chapters": {
