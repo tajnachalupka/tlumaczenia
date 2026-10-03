@@ -3,6 +3,9 @@
   "title": "extra",
   "desc": "dodatki",
   "chapters": {
+    "nic": [
+      "https://tajnachalupka.github.io/main/extra/jeszcze-nic.png"
+    ],
     "1rta": [
       "https://tajnachalupka.github.io/extra/1rta/1.jpg",
       "https://tajnachalupka.github.io/extra/1rta/2.jpg",
