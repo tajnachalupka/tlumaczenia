@@ -11,6 +11,10 @@
 },
   "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvv/melting-point-o5kcvpcptb5itui1",
   "disqus_base": "mp",
+  "extra_button": {
+    "image": "https://tajnachalupka.github.io/main/extra/mp.png",
+    "link": "https://tajnachalupka.wixsite.com/tlumaczenia/pytania"
+  },
   "chapters": {
     "1": [
       "https://tajnachalupka.github.io/mp/01/1.jpg",
