@@ -11,6 +11,10 @@
 },
   "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvv/one-room-ta-i4dpk9rl9n62kku4",
   "disqus_base": "1rta",
+  "extra_button": {
+    "image": "https://tajnachalupka.github.io/main/extra/1rta.png",
+    "link": "https://tajnachalupka.wixsite.com/tlumaczenia/pytania"
+  },
   "chapters": {
     "1": [
       "https://tajnachalupka.github.io/1rta/01/0.jpg",
