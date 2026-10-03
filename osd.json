@@ -12,6 +12,10 @@
 },
  "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvv/our-sunny-days-a3k90ueey9qztdri",
   "disqus_base": "osd",
+  "extra_button": {
+    "image": "https://tajnachalupka.github.io/main/extra/osd.png",
+    "link": "https://tajnachalupka.wixsite.com/tlumaczenia/pytania"
+  },
   "chapters": {
     "1": [
       "https://tajnachalupka.github.io/osd/01/1.jpg",
