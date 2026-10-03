@@ -13,6 +13,10 @@
 },
 "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvv/rainbow-city-fwvlaiawvad7ugrc",
   "disqus_base": "rc",
+  "extra_button": {
+    "image": "https://tajnachalupka.github.io/main/extra/rc.png",
+    "link": "https://tajnachalupka.wixsite.com/tlumaczenia/pytania"
+  },
   "chapters": {
     "0": [
       "https://tajnachalupka.github.io/rc/00/1.jpg",
