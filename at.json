@@ -11,6 +11,10 @@
 },
   "padlet": "https://padlet.com/vvvvvvvvvvvvvvvv/alpha-trauma-m2x098yvh45m5ggj",
   "disqus_base": "at",
+  "extra_button": {
+    "image": "https://tajnachalupka.github.io/main/extra/at.png",
+    "link": "https://tajnachalupka.wixsite.com/tlumaczenia/pytania"
+  },
   "chapters": {
     "1": [
       "https://tajnachalupka.github.io/at/01/1.jpg",
