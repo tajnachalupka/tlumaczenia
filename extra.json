@@ -1,0 +1,51 @@
+{
+  "slug": "extra",
+  "title": "extra",
+  "desc": "dodatki",
+  "chapters": {
+    "1rta": [
+      "https://tajnachalupka.github.io/main/extra/afos/1.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/1.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/1.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/1.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/1.jpg"
+    ],
+    "afos": [
+      "https://tajnachalupka.github.io/main/extra/afos/1.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/2.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/3.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/4.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/5.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/6.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/7.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/8.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/9.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/10.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/11.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/12.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/13.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/14.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/15.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/16.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/17.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/18.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/19.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/20.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/21.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/22.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/23.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/24.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/25.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/26.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/27.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/28.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/29.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/30.jpg"
+    ],
+    "at": [
+      "https://tajnachalupka.github.io/main/extra/afos/22.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/22.jpg",
+      "https://tajnachalupka.github.io/main/extra/afos/22.jpg"
+    ]
+    }
+}
