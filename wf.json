@@ -11,6 +11,10 @@
 },
   "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvvvvvv/winterfield",
   "disqus_base": "wf",
+  "extra_button": {
+    "image": "https://tajnachalupka.github.io/main/extra/wf.png",
+    "link": "https://tajnachalupka.github.io/tlumaczenia/readerx.html?comic=extra&chapter=wf"
+  },
   "chapters": {
     "0": [
       "https://tajnachalupka.github.io/wf/00/1.jpg",
