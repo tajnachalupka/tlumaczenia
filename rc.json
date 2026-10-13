@@ -6,10 +6,10 @@
   "cover": "https://tajnachalupka.github.io/main/covers/rc.png",
   "desc": "Podczas apokalipsy zombie, genialny naukowiec doktor Seok Hwa dowiaduje się, że jego poprzednik został zamordowany. W związku z tym wojsko przydziela mu najlepszego ochroniarza, jakiego może zaoferować - majora Kwaka Suhwana. Jednak major Kwak ma lepsze rzeczy do roboty niż ochrona delikatnego, ekscentrycznego naukowca. Na przykład zaciągnięcie go do łóżka. Doktor Seok jest w stanie tolerować bezczelne zachowanie majora, ale czy może mu zaufać i powierzyć swoje życie?",
   "seasons": {
-  "Sezon 1.": { "from": "0", "to": "33" },
-  "Sezon 2.": { "from": "34", "to": "67" },
-  "Sezon 3.": { "from": "68", "to": "88" },
-  "Sezon 4.": { "from": "89", "to": "∞" }
+  "1. sezon": { "from": "0", "to": "33" },
+  "2. sezon": { "from": "34", "to": "67" },
+  "3. sezon": { "from": "68", "to": "88" },
+  "4. sezon": { "from": "89", "to": "∞" }
 },
 "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvv/rainbow-city-fwvlaiawvad7ugrc",
   "disqus_base": "rc",
