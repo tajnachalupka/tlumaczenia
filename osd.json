@@ -6,9 +6,9 @@
   "cover": "https://tajnachalupka.github.io/main/covers/osd.png",
   "desc": "Sung Ho jest byłym żołnierzem i… samotnym młodym ojcem. Bez pracy i planów, ma nadzieję, że spokojna wieś Nuldongmae stanie się dla niego i jego córki nowym domem. Już pierwszego dnia po przeprowadzce wysoki, przystojny właściciel lokalnego sklepu oskarża go o kradzież. Nowy sąsiad naprawdę działa Ho na nerwy, ale wydaje się, że wie dużo o wiosce… Ho od zawsze był samotnym wędrowcem. Czy będzie w stanie wpuścić kogoś do swojego życia?",
   "seasons": {
-  "Sezon 1.": { "from": "1", "to": "25" },
-  "Sezon 2.": { "from": "26", "to": "51" },
-  "Sezon 3.": { "from": "52", "to": "77.5" },
+  "1. sezon": { "from": "1", "to": "25" },
+  "2. sezon": { "from": "26", "to": "51" },
+  "3. sezon": { "from": "52", "to": "77.5" },
   "side story": { "from": "78", "to": "∞" }
 },
  "padlet": "https://padlet.com/vvvvvvvvvvvvvvvvvv/our-sunny-days-a3k90ueey9qztdri",
