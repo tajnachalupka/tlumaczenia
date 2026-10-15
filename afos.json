@@ -7,9 +7,7 @@
   "desc": "Hyunsun, prowadzący wyjątkowo zwyczajne życie, osiąga kamień milowy - 40. urodziny, Chcąc zacząć coś nowego zanim będzie za późno, zapisuje się do szkoły gitarowej. Tam spotyka młodego instruktora - Yeoreum i po raz pierwszy od dawna odczuwa prawdziwą pasję do życia. Gdy ich więź się pogłębia i Yeoreum zaczyna okazywać co naprawdę do niego czuje, ich relacja staje w obliczu nowej sytuacji…<br><br>*odcenzurowanie mieczy świetlnych - ruoye<br>do 44 rozdziały są tylko w wersji bez cenzury.<br>od ch. 44 są dwie wersje rozdziałów 18+:<br>♡ z cenzurą: oryginalna = miecze świetlne<br>❤️‍bez cenzury: jak dorysuję co trzeba",
   "seasons": {
   "1. sezon": { "from": "1", "to": "40" },
-  "2. sezon": { "from": "41", "to": "64.0" },
-  "side story": { "from": "64.1", "to": "64.2" },
-  "3. sezon": { "from": "65", "to": "∞" }
+  "2. sezon": { "from": "41", "to": "∞" }
 },
   "padlet": "https://padlet.com/vvvvvvvvvvvvvvvv/a-first-of-summers-xvfowvg6hnywhy1s",
   "disqus_base": "afos",
@@ -495,13 +493,6 @@
       "https://tajnachalupka.github.io/afos/64.2/2.jpg",
       "https://tajnachalupka.github.io/afos/64.2/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
-      ],
-    "65": [ 
-      "https://tajnachalupka.github.io/afos/64/1.jpg",
-      "https://tajnachalupka.github.io/afos/64/2.jpg",
-      "https://tajnachalupka.github.io/afos/64/3.jpg",
-      "https://tajnachalupka.github.io/afos/64/4.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-     ]
+    ]
   }
 }
