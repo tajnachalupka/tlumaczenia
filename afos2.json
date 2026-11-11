@@ -4,7 +4,7 @@
   "header_img": "https://tajnachalupka.github.io/main/tagi/afos.png",
   "series_icon": "https://tajnachalupka.github.io/main/guzik-gora/afos.png",
   "cover": "https://tajnachalupka.github.io/main/covers/afos.png",
-  "desc": "Hyunsun, prowadzący wyjątkowo zwyczajne życie, osiąga kamień milowy - 40. urodziny, Chcąc zacząć coś nowego zanim będzie za późno, zapisuje się do szkoły gitarowej. Tam spotyka młodego instruktora - Yeoreum i po raz pierwszy od dawna odczuwa prawdziwą pasję do życia. Gdy ich więź się pogłębia i Yeoreum zaczyna okazywać co naprawdę do niego czuje, ich relacja staje w obliczu nowej sytuacji…<br><br>*odcenzurowanie mieczy świetlnych - ruoye<br>do 44 rozdziały są tylko w wersji bez cenzury.<br>od ch. 44 są dwie wersje rozdziałów 18+:<br>♡ z cenzurą: oryginalna = miecze świetlne<br>❤️‍bez cenzury: jak dorysuję co trzeba",
+  "desc": "Hyunsun, prowadzący wyjątkowo zwyczajne życie, osiąga kamień milowy - 40. urodziny, Chcąc zacząć coś nowego zanim będzie za późno, zapisuje się do szkoły gitarowej. Tam spotyka młodego instruktora - Yeoreum i po raz pierwszy od dawna odczuwa prawdziwą pasję do życia. Gdy ich więź się pogłębia i Yeoreum zaczyna okazywać co naprawdę do niego czuje, ich relacja staje w obliczu nowej sytuacji…<br><br>*odcenzurowanie mieczy świetlnych - ruoye<br> przetłumaczone rozdziały 18+ najpierw wrzucam z cenzurą (oryginał=miecze świetlne), a jak dorysuję co trzeba podnieniam na wersję ❤️‍ bez cenzury.",
   "seasons": {
   "1. sezon": { "from": "1", "to": "40" },
   "2. sezon": { "from": "41", "to": "∞" }
@@ -305,13 +305,7 @@
       "https://tajnachalupka.github.io/afos/44u/2.jpg",
       "https://tajnachalupka.github.io/afos/44u/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
-    ],
-    "44♡": [
-      "https://tajnachalupka.github.io/afos/44/1.jpg",
-      "https://tajnachalupka.github.io/afos/44/2.jpg",
-      "https://tajnachalupka.github.io/afos/44/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-    ],
+     ],
     "45": [
       "https://tajnachalupka.github.io/afos/45/1.jpg",
       "https://tajnachalupka.github.io/afos/45/2.jpg",
@@ -323,13 +317,7 @@
       "https://tajnachalupka.github.io/afos/46u/2.jpg",
       "https://tajnachalupka.github.io/afos/46u/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
-       ],
-    "46♡": [
-      "https://tajnachalupka.github.io/afos/46/1.jpg",
-      "https://tajnachalupka.github.io/afos/46/2.jpg",
-      "https://tajnachalupka.github.io/afos/46/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-      ],
+     ],
     "47": [
       "https://tajnachalupka.github.io/afos/47/1.jpg",
       "https://tajnachalupka.github.io/afos/47/2.jpg",
@@ -347,13 +335,7 @@
       "https://tajnachalupka.github.io/afos/49u/2.jpg",
       "https://tajnachalupka.github.io/afos/49u/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
-        ],
-    "49♡": [
-      "https://tajnachalupka.github.io/afos/49/1.jpg",
-      "https://tajnachalupka.github.io/afos/49/2.jpg",
-      "https://tajnachalupka.github.io/afos/49/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-    ],
+     ],
     "50": [
       "https://tajnachalupka.github.io/afos/50/1.jpg",
       "https://tajnachalupka.github.io/afos/50/2.jpg",
@@ -378,12 +360,6 @@
       "https://tajnachalupka.github.io/afos/53uncensored/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
        ],
-    "53♡": [
-      "https://tajnachalupka.github.io/afos/53/1.jpg",
-      "https://tajnachalupka.github.io/afos/53/2.jpg",
-      "https://tajnachalupka.github.io/afos/53/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-    ],
     "54": [
       "https://tajnachalupka.github.io/afos/54/1.jpg",
       "https://tajnachalupka.github.io/afos/54/2.jpg",
@@ -418,25 +394,11 @@
       "https://tajnachalupka.github.io/afos/58/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
     ],
-    "59♡": [
-      "https://tajnachalupka.github.io/afos/59/0.jpg", 
-      "https://tajnachalupka.github.io/afos/59/1.jpg",
-      "https://tajnachalupka.github.io/afos/59/2.jpg",
-      "https://tajnachalupka.github.io/afos/59/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-    ],
     "59❤️‍": [
       "https://tajnachalupka.github.io/afos/59un/0.jpg", 
       "https://tajnachalupka.github.io/afos/59un/1.jpg",
       "https://tajnachalupka.github.io/afos/59un/2.jpg",
       "https://tajnachalupka.github.io/afos/59un/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-   ],
-    "60♡": [
-      "https://tajnachalupka.github.io/afos/60/0.jpg", 
-      "https://tajnachalupka.github.io/afos/60/1.jpg",
-      "https://tajnachalupka.github.io/afos/60/2.jpg",
-      "https://tajnachalupka.github.io/afos/60/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
    ],
      "60❤️‍": [
@@ -456,12 +418,6 @@
       "https://tajnachalupka.github.io/afos/62/1.jpg",
       "https://tajnachalupka.github.io/afos/62/2.jpg",
       "https://tajnachalupka.github.io/afos/62/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-     ],
-    "63♡": [ 
-      "https://tajnachalupka.github.io/afos/63/1.jpg",
-      "https://tajnachalupka.github.io/afos/63/2.jpg",
-      "https://tajnachalupka.github.io/afos/63/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
      ],
     "63❤️‍": [ 
@@ -507,12 +463,6 @@
       "https://tajnachalupka.github.io/afos/64.4/3.jpg",
       "https://tajnachalupka.github.io/afos/00afos.jpg"
       ],
-    "64.5♡": [ 
-      "https://tajnachalupka.github.io/afos/64.5/1.jpg",
-      "https://tajnachalupka.github.io/afos/64.5/2.jpg",
-      "https://tajnachalupka.github.io/afos/64.5/3.jpg",
-      "https://tajnachalupka.github.io/afos/00afos.jpg"
-       ],
     "64.5❤️‍": [ 
       "https://tajnachalupka.github.io/afos/64.5u/1.jpg",
       "https://tajnachalupka.github.io/afos/64.5u/2.jpg",
